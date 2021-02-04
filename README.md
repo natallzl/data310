@@ -1,4 +1,4 @@
-# Data 310 - Applied Machine Learning
+# Applied Machine Learning
 
 ## Exercises
 - Feb. 5 2021
