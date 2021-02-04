@@ -1,7 +1,7 @@
 # Applied Machine Learning
 
 ## Exercises
-- Feb. 5 2021
+- Feb. 5 Response
 
 ## Projects
 1. 
