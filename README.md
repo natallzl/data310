@@ -1,5 +1,3 @@
-# Applied Machine Learning
-
 ## Exercises
 - Feb. 5 Response
 
