@@ -11,4 +11,4 @@
 - The 2-bedroom Moon house, costs $250,000, so it is overvalued by $78,563 based on the predicted cost of $171,437 for a 2-bedroom home. The Church house, a 4-bedroom home, costs $399,000, which is $98,362 more than the predicted $300,638, so it is not a good deal. 
 - Based on the model, the Hudgins home presents the best deal and the Church home is the worst deal, as the actual prices of these two homes differ the most from their respective predicted prices.
 
-Video source: [Machine Learning Foundations: Ep #1 - What is ML?](https://www.youtube.com/watch?v=_Z9TRANg4c0)
+**Video source:** [Machine Learning Foundations: Ep #1 - What is ML?](https://www.youtube.com/watch?v=_Z9TRANg4c0)
