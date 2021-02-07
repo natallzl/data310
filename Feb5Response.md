@@ -27,14 +27,14 @@ The 2-bedroom Moon house costs $250,000, so it is overvalued by $78,563 based on
 
 Based on the model, the Hudgins home presents the best deal and the Church home is the worst deal, as the actual prices of these two homes differ the most from their respective predicted prices.
 
-| House (# bedrooms)      | Model-predicted price | Actual price      |
+| House (# bedrooms)      | Actual price      | Model-predicted price | 
 | ----------- | ----------- | ----------- |
-| New Point Comfort (3 bd)      | $232,242       | $229,000       |
-| Moon (2 bd)     | $171,437      | $250,000      |
-| Mobjack (4 bd)      | $300,638       | $289,000       |
-| Mathews (5 bd)      | $368,824       | $347,500       |
-| Hudgins (3 bd)      | $232,242       | $97,000       |
-| Church (4 bd)      | $300,638       | $399,000       |
+| New Point Comfort (3 bd)      | $229,000       | $232,242       | 
+| Moon (2 bd)     | $250,000      | $171,437      | 
+| Mobjack (4 bd)      | $289,000       | $300,638       | 
+| Mathews (5 bd)      | $347,500       | $368,824       | 
+| Hudgins (3 bd)      | $97,000       | $232,242       | 
+| Church (4 bd)      | $399,000       | $300,638       | 
 
 
 
