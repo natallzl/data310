@@ -18,6 +18,7 @@ print(model.predict([d]))
 ``` 
 
 Below is a table comparing the actual prices vs. the model-predicted prices of the six homes:
+
 | House (# bd, sqft, ba)      | Actual price      | Model-predicted price | 
 | ----------- | ----------- | ----------- |
 | New Point Comfort (3 bd, 2,840 sqft, 2ba)      | $229,000       | $280,041      | 
@@ -34,7 +35,8 @@ Previously predicted to be a good value, the Mathews house is now a bad deal, co
 **Based on this updated model, the Hudgins home still presents the best deal, but now the Moon home is now the worst deal.**
 
 
-Below is a table comparing the model-predicted prices of the bedroom model and the bedroom/sqft/bathroom model
+Below is a table comparing the model-predicted prices of the bedroom model and the bedroom/sqft/bathroom model:
+
 | House (# bd, sqft, ba)      | Actual price      | Bd model-predicted price | Bd/sqft/ba model-predicted price      |
 | ----------- | ----------- | ----------- | ----------- |
 | New Point Comfort (3 bd, 2,840 sqft, 2ba)      | $229,000       | $232,242      | $280,041       |
