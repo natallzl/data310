@@ -28,10 +28,18 @@ The length of the labels training set is 60,000, so there are 60,000 labels in t
 In the images test set there are 10,000 test images, and each image is 28x28 pixels. 
 
 **4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).**
- 
+
+Following the method applied to the fashion MNIST dataset in Maroney’s example, I estimated a probability model and was able to apply it to the hand written letters MNIST test set. I tested the second image in the test set, and produced an array of probabilities that the image is each of the possible numeric outcomes from 0 to 9. The array produced was:
+```
+[6.5622419e-09 1.4226996e-05 9.9997771e-01 7.5308012e-06 8.7015280e-15 2.4255627e-07 6.1058209e-08 3.7087873e-13 1.5749997e-07 1.8437120e-11]
+ ```
+Each number in the array is a probability. The largest number, or the largest probability, in the array corresponds to the number that the image most likely shows. In this example, that number is 2. 
 
 **5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.**
- 
+
+Using np.argmax() on the predictions object for the second image from the test set returns 2, so the highest probability result is that the image is a 2. Then, we can also look at the test label for the corresponding test image, and it is 2.  
 
 **6. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number.**
+
+![](two_image_plot.png)
 
