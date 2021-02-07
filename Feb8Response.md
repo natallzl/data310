@@ -37,7 +37,7 @@ Each number in the array is a probability. The largest number, or the largest pr
 
 **5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.**
 
-Using np.argmax() on the predictions object for the second image from the test set returns 2, so the highest probability result is that the image is a 2. Then, we can also look at the test label for the corresponding test image, and it is 2.  
+Using np.argmax() on the predictions object for the second image from the test set returns 2, so the highest probability result is that the image is a 2. Then, we can also look at the test label for the corresponding test image... and it is 2.  
 
 **6. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number.**
 
