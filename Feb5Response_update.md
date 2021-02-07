@@ -31,7 +31,7 @@ The New Point Comfort house now costs $51,041 less than predicted by the model. 
 
 Previously predicted to be a good value, the Mathews house is now a bad deal, costing $40,787 more than predicted. Additionally, the Moon house is overvalued by $91,415. The Church house costs $8,318 than predicted by the model, so it is also not a good deal. 
 
-**Now, based on this updated model, the Hudgins home still presents the best deal, but now the Moon home is the worst deal.**
+**Based on this updated model, the Hudgins home still presents the best deal, but now the Moon home is now the worst deal.**
 
 
 Below is a table comparing the model-predicted prices of the bedroom model and the bedroom/sqft/bathroom model
