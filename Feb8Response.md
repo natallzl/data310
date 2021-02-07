@@ -43,3 +43,5 @@ Using np.argmax() on the predictions object for the second image from the test s
 
 ![](two_image_plot.png)
 
+
+**Video source:** [Machine Learning Foundations: Ep #2 - First Steps in Computer Vision](https://www.youtube.com/watch?v=j-35y1M9rRU)
