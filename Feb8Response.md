@@ -15,20 +15,23 @@ There are 10 neurons in the last layer in the neural network because there are 1
 
 **Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions.**
 
- **1. What is the shape of the images training set (how many and the dimension of each)?**
+**1. What is the shape of the images training set (how many and the dimension of each)?**
 
+In the images training set there are 60,000 training images, and each image is 28x28 pixels.
 
- **2. What is the length of the labels training set?**
+**2. What is the length of the labels training set?**
 
+The length of the labels training set is 60,000, so there are 60,000 labels in the training set. This makes sense, because there are 60,000 images in the images training set and each image needs a corresponding label.
 
- **3. What is the shape of the images test set?**
+**3. What is the shape of the images test set?**
+
+In the images test set there are 10,000 test images, and each image is 28x28 pixels. 
+
+**4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).**
  
 
- **4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).**
+**5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.**
  
 
- **5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.**
- 
-
- **6. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number.**
+**6. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number.**
 
