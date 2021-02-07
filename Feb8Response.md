@@ -12,6 +12,9 @@ There are 10 neurons in the last layer in the neural network because there are 1
 
 **In the past example we used the optimizer and loss function, while in this one we are using the function adam in the optimizer argument and sparse_categorical- crossentropy for the loss argument. How do the optimizer and loss functions operate to produce model parameters (estimates) within the model.compile() function?**
 
+The optimizer function...
+
+The loss function...
 
 **Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions.**
 
