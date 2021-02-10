@@ -1,20 +1,11 @@
 Using the script produced to predict housing price, I modified it using the provided number of bedrooms, square footage, number of bathrooms, and prices from the six houses from Mathews, Virginia. I scaled down the square footage by 1,000 and the price by $100,000, then used a neural network to predict the house price for varying numbers of bedrooms, square footage, and bathrooms. I then found the difference between the predicted price and the actual price to determine which of the homes present the best and worst deals.
 
 ```
-model = tf.keras.Sequential([keras.layers.Dense(units=1, input_shape=[3])])
-model.compile(optimizer='sgd', loss='mean_squared_error')
 x1 = np.array([3.0, 2.0, 4.0, 5.0, 3.0, 4.0], dtype=float)              #number of bedrooms
 x2 = np.array([2.840, 1.479, 3.524, 3.051, 1.238, 3.680], dtype=float)  #sqft(/1000)
 x3 = np.array([2.0, 1.0, 2.0, 2.0, 1.0, 3.0], dtype=float)              #number of bathrooms
 xs = np.stack([x1, x2, x3], axis=1)
 ys = np.array([2.29, 2.50, 2.89, 3.475, 0.97, 3.99], dtype=float)
-model.fit(xs, ys, epochs=1000)
-
-a = np.array([4.0], dtype=float)
-b = np.array([3.680], dtype=float)
-c = np.array([3.0], dtype=float)
-d = np.stack([a, b, c], axis=1)
-print(model.predict([d]))
 ``` 
 
 Below is a table comparing the actual prices vs. the model-predicted prices of the six homes:
@@ -45,3 +36,5 @@ Below is a table comparing the model-predicted prices of the bedroom model and t
 | Mathews (5 bd, 3,051 sqft, 2 ba)      | $347,500       | $368,824      | $306,713       |
 | Hudgins (3 bd, 1,238 sqft, 1 ba)      | $97,000       | $232,242     | $164,729       |
 | Church (4 bd, 3,680 sqft, 3 ba)      | $399,000       | $300,638     | $390,682       |
+
+**Code:** [Feb5Response_update.py](Feb5Response_update.py)
