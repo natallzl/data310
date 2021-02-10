@@ -37,4 +37,4 @@ Below is a table comparing the model-predicted prices of the bedroom model and t
 | Hudgins (3 bd, 1,238 sqft, 1 ba)      | $97,000       | $232,242     | $164,729       |
 | Church (4 bd, 3,680 sqft, 3 ba)      | $399,000       | $300,638     | $390,682       |
 
-**Code:** [Feb5Response_update.py](Feb5Response_update.py)
+**Code:** [Feb5Response_update.py](https://github.com/natallzl/data310/blob/main/Feb5Response_update.py)
