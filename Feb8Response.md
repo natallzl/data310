@@ -30,11 +30,12 @@ In the images test set there are 10,000 test images, and each image is 28x28 pix
 
 **4. Estimate a probability model and apply it to the test set in order to produce the array of probabilities that a randomly selected image is each of the possible numeric outcomes (look towards the end of the basic image classification exercises for how to do this — you can apply the same method applied to the Fashion MNIST dataset but now apply it to the hand written letters MNIST dataset).**
 
-Following the method applied to the fashion MNIST dataset in Maroney’s example, I estimated a probability model and was able to apply it to the hand written letters MNIST test set. I tested the second image in the test set, and produced an array of probabilities that the image is each of the possible numeric outcomes from 0 to 9. The array produced was:
+Following the method applied to the fashion MNIST dataset in Maroney’s example, I estimated a probability model and was able to apply it to the hand written letters MNIST test set. I tested the second image in the test set (index 1), and produced an array of probabilities that the image is each of the possible numeric outcomes from 0 to 9. The array produced was:
 ```
-[6.5622419e-09 1.4226996e-05 9.9997771e-01 7.5308012e-06 8.7015280e-15 2.4255627e-07 6.1058209e-08 3.7087873e-13 1.5749997e-07 1.8437120e-11]
+[0.08533677, 0.08533685, 0.23196895, 0.08533677, 0.08533677,
+       0.08533683, 0.08533677, 0.08533677, 0.08533677, 0.08533677]
  ```
-Each number in the array is a probability. The largest number, or the largest probability, in the array corresponds to the number that the image most likely shows. In this example, that number is 2. 
+Each number in the array is a probability. The largest probability in the array corresponds to the number that the image most likely shows. In this example, that number is 2. 
 
 **5. Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.**
 
@@ -42,7 +43,7 @@ Using np.argmax() on the predictions object for the second image from the test s
 
 **6. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number.**
 
-![](two_image_plot.png)
+![](two_image_plots.png)
 
 
 **Video source:** [Machine Learning Foundations: Ep #2 - First Steps in Computer Vision](https://www.youtube.com/watch?v=j-35y1M9rRU)
