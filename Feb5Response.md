@@ -40,4 +40,4 @@ Based on the model, the Hudgins home presents the best deal and the Church home 
 
 **Video source:** [Machine Learning Foundations: Ep #1 - What is ML?](https://www.youtube.com/watch?v=_Z9TRANg4c0)
 
-**Code:** [Feb5Response.py](Feb5Response.py)
+**Code:** [Feb5Response.py](https://github.com/natallzl/data310/blob/main/Feb5Response.py)
