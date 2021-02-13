@@ -6,4 +6,4 @@
 - [Feb. 8 Response](https://natallzl.github.io/data310/Feb8Response.html)
 
 ### Projects
-
+1. [Project 1 (Feb. 14)](https://natallzl.github.io/data310/Project1.html)
