@@ -1,4 +1,4 @@
-**Output:** (link to video here)
+**Output:** [output_of_nyc2018.mp4](output_of_nyc2018.mp4)
 
 
 **Was your social distance detector effective at detecting potential violations?** 
