@@ -7,7 +7,7 @@ Yes, I think the social distance detector was pretty effective at detecting pote
 
 **Are you able to describe how the distance detector is applying its calculations of either being safe or noting a violation?**
 
-The detector looks at the video frame by frame, and determines whether what is in the video is a person or not. Then it calculates the distance between people to determine whether they are violating proper social distancing or not. The first Check function appears to determine the distance. I’m not sure exactly what the Setup function does, but it appears to use the input files (yolov3.weights, yolov3.cfg, and coco.names) to set up a neural net to be utilized in processing the video and calculating/detecting social distance violations. The ImageProcess function is the largest chunk of the code, and it looks like here a neural net processes the video frame by frame, determines where people are in each frame and draws a box around them, then calls the Check function to check the distance between people. The script also creates an output video noting violations.
+The detector looks at the video frame by frame, and determines whether what is in the video is a person or not. Then it calculates the distance between people to determine whether they are violating proper social distancing or not. The first Check function appears to determine the distance. I’m not sure exactly what the Setup function does, but it appears to use the input files (yolov3.weights, yolov3.cfg, and coco.names) to set up a neural net to be utilized in processing the video and calculating/detecting social distance violations. The ImageProcess function is the largest chunk of the code; it looks like here a neural net processes the video frame by frame, determines where people are in each frame and draws a box around them, then calls the Check function to check the distance between people. The script also creates an output video noting violations.
 
 
 **Do you think this approach would be effective for estimating new infections in real time? How would you implement such an approach in response to the COVID-19 pandemic we are currently experiencing?**
@@ -17,7 +17,7 @@ I think this approach would be effective for detecting violations in real time, 
 
 **What limitations or improvements might you include in order to improve your proposed design?**
 
-I would use it with a camera that has a higher angle; this would likely help with the overlap issue and help with judging distances even more accurately. I might also include a way to tell whether people are violating social distancing or if they are in a group, for example a family or a couple where the people will always be close to one another. 
+I would use it with a camera that has a higher angle; this would likely help with the overlap issue and help with judging distances even more accurately. I might also include a way to tell whether people are truly violating social distancing or if they are in a group, for example a family or a couple where the people will always be close to one another. 
 
 
 **Code:** [soc_dist_det.py](https://github.com/natallzl/data310/blob/main/soc_dist_det.py)
