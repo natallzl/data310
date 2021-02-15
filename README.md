@@ -1,5 +1,5 @@
 # Applied Machine Learning
-## Natalie Larsen - Data 310
+## Natalie Larsen
 
 ### Exercises
 - [Feb. 5 Response](https://natallzl.github.io/data310/Feb5Response.html)
