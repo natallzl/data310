@@ -1,4 +1,4 @@
-**Output:** [output_of_nyc2018.mp4](output_of_nyc2018.mp4)
+**Output:** [output_of_nyc2018.mp4](https://github.com/natallzl/data310/blob/main/output_of_nyc2018.mp4)
 
 **Was your social distance detector effective at detecting potential violations?** 
 
