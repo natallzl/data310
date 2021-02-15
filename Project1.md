@@ -18,4 +18,4 @@
 
 **Code:** (link to code here)
 
-**Original video:** [NYC crowd, 2018](https://www.youtube.com/watch?v=BOkXZg7XwSo)
+**Original video:** [NYC crowd, 2018](https://www.youtube.com/watch?v=BOkXZg7XwSo), clip taken from ~8:58
