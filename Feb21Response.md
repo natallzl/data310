@@ -1,5 +1,10 @@
 **Modify the existing filter and if needed the associated weight in order to apply your new filters to the image 3 times. Plot each result, upload them to your response, and describe how each filter transformed the existing image as it convolved through the original array and reduced the object size.**
 
+![]()
+
+![]()
+
+![]()
 
 **What are you functionally accomplishing as you apply the filter to your original array?**
 
@@ -23,3 +28,6 @@
 
 
 **Stretch goal: again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.**
+
+
+**Convolve the 3x3 filter over the 9x9 matrix and provide the resulting matrix.**
