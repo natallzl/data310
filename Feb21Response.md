@@ -31,7 +31,7 @@ filter3 = [[2, 2, 2], [0, -2, 0], [-2, 0, -2]]
 **Stretch goal: instead of using the misc.ascent() image from scipy, can you apply three filters and weights to your own selected image? Again describe the results.**
 
 
-**Apply a 2x2 filter to one of your convolved images, and plot the result.**
+**Another useful method is pooling. Apply a 2x2 filter to one of your convolved images, and plot the result.**
 
 
 **In effect what have you accomplished by applying this filter?**
