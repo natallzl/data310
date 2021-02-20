@@ -1,10 +1,26 @@
+Original stair image:
+
+<img src="stair_og.png" alt="drawing" width="300"/>
+
 **Modify the existing filter and if needed the associated weight in order to apply your new filters to the image 3 times. Plot each result, upload them to your response, and describe how each filter transformed the existing image as it convolved through the original array and reduced the object size.**
 
-![]()
+```
+filter1 = [[1, 1, 1], [-1, -1, -1], [0, 0, 0]]
+```
 
-![]()
+<img src="stair_filter1.png" alt="drawing" width="300"/>
 
-![]()
+```
+filter2 = [[0, 0, 0], [-2, 4, -2], [0, 0, 0]]
+```
+
+<img src="stair_filter2.png" alt="drawing" width="300"/>
+
+```
+filter3 = [[2, 2, 2], [0, -2, 0], [-2, 0, -2]]
+```
+
+<img src="stair_filter3.png" alt="drawing" width="300"/>
 
 **What are you functionally accomplishing as you apply the filter to your original array?**
 
