@@ -38,7 +38,7 @@ The 3x3 filter is applied to each pixel in the original array. For each pixel, t
 
 A convolving filter is useful for computer vision because it processes the image to raw features. Ideally, the features that are most prominent are the features that are most important in the image. Watching the Maroney video, convolutions help with extracting features of an image for use in classification; instead of just looking at and matching the individual pixels in the image, sets of features can be matched to a label. 
 
-**Stretch goal: instead of using the misc.ascent() image from scipy, can you apply three filters and weights to your own selected image? Again describe the results.**
+***Stretch goal:*** **instead of using the misc.ascent() image from scipy, can you apply three filters and weights to your own selected image? Again describe the results.**
 
 Original flower image:
 
@@ -96,11 +96,11 @@ for x in range(0, size_x, 2):
 
 The resulting image decreased in size, from 640x640 to 320x320. This would be useful in making processing more time efficient because the features are maintained in the image, but the ‘noise’ is gone. The image is smaller so there is less information that needs to be processed by the computer. 
 
-**Stretch goal: again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.**
+***Stretch goal:*** **again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.**
 
 <img src="flower_pooling.png" alt="drawing" width="600"/>
 
-**Bonus: Convolve the 3x3 filter over the 9x9 matrix and provide the resulting matrix.**
+***Bonus:*** **Convolve the 3x3 filter over the 9x9 matrix and provide the resulting matrix.**
 
 
 **Video source:** [Machine Learning Foundations: Ep #3 - Convolutions and Pooling](https://www.youtube.com/watch?v=PCgLmzkRM38&t=76s)
