@@ -10,17 +10,23 @@ filter1 = [[1, 1, 1], [-1, -1, -1], [0, 0, 0]]
 
 <img src="stair_filter1.png" alt="drawing" width="300"/>
 
+The first filter appears to focus on vertical lines in the image; overall the image is very dark and you can really only see the vertical lines of the stair railing and the diagonal lines in the upper left. The top middle of the image is almost gone.
+
 ```
 filter2 = [[0, 0, 0], [-2, 4, -2], [0, 0, 0]]
 ```
 
 <img src="stair_filter2.png" alt="drawing" width="300"/>
 
+The second filter emphasizes the diagonal lines in the upper left corner of the image, and not much else. Some diagonal lines are visible on the right side of the image, but most of the image is gone (dark). 
+
 ```
 filter3 = [[2, 2, 2], [0, -2, 0], [-2, 0, -2]]
 ```
 
 <img src="stair_filter3.png" alt="drawing" width="300"/>
+
+The third filter shows the vertical lines in the image very strongly, as well as many of the horizontal lines as well. This filter is the “best” in terms of visibility of features of the image; vertical, diagonal, and horizontal lines are all pretty clear. 
 
 **What are you functionally accomplishing as you apply the filter to your original array?**
 
