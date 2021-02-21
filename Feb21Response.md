@@ -73,6 +73,7 @@ filter3 = [[-4, 0, -4], [2, 0, 2], [2, 0, 2]]
 By applying this pooling filter, the size of the image is reduced but the features filtered by the convolving filter are still present. A 2x2 filter, such as this one, takes a 2x2 block (or four pixels) and ‘chooses’ (max/min/avg/etc.) a value to load into the new image. This reduces the size of the image, which can be seen in the dimensions of the original vs pooled image above - 640x640 is reduced to 320x320. 
 
 **Does there seem to be a logic (i.e. maximizing, averaging or minimizing values?) associated with the pooling filter provided in the example exercise (convolutions & pooling)?**
+
 This pooling filter seems to be a maximizing feature. It looks at a 2x2 area of pixels in the image, sorts the values of the pixels in descending order, and then chooses the first value from the list. So effectively, the filter chooses the maximum value from each 2x2 area and returns that as the pixel value for the new image.
 
 Code for reference:
