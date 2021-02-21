@@ -80,6 +80,6 @@ filter3 = [[-4, 0, -4], [2, 0, 2], [2, 0, 2]]
 **Convolve the 3x3 filter over the 9x9 matrix and provide the resulting matrix.**
 
 
-Based on video: [Machine Learning Foundations: Ep #3 - Convolutions and Pooling](https://www.youtube.com/watch?v=PCgLmzkRM38&t=76s)
+**Video source:** [Machine Learning Foundations: Ep #3 - Convolutions and Pooling](https://www.youtube.com/watch?v=PCgLmzkRM38&t=76s)
 
-Code: [Feb21Response.py]()
+**Code:** [Feb21Response.py]()
