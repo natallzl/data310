@@ -1,3 +1,5 @@
+## Convolutions
+
 **Modify the existing filter and if needed the associated weight in order to apply your new filters to the image 3 times. Plot each result, upload them to your response, and describe how each filter transformed the existing image as it convolved through the original array and reduced the object size.**
 
 Original stair image:
