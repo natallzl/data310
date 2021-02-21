@@ -50,17 +50,24 @@ filter1 = [[0, -2, 0], [0, 0, 0], [1, 0, 1]]
 
 <img src="flower_filter1.png" alt="drawing" width="300"/>
 
+Filter 1 produced a very dark image. Part of the outline and veins of the flower can be seen; emphasis seems to be on the somewhat vertical lines in the image.
+
 ```
 filter2 = [[2, 2, 2], [2, -4, 2], [-2, -2, -2]]
 ```
 
 <img src="flower_filter2.png" alt="drawing" width="300"/>
 
+The second filter shows more features of the flower and there is stronger emphasis on the features on the right side of the flower.
+
 ```
 filter3 = [[-4, 0, -4], [2, 0, 2], [2, 0, 2]]
 ```
 
 <img src="flower_filter3.png" alt="drawing" width="300"/>
+
+Filter 3 appears to capture features almost opposite those of filter 2. The left side of the flower is more clearly outlined versus the right, and ‘top’ lines are more emphasized than lines on the ‘bottom’ or shadowed edges of the flower. 
+
 
 ## Pooling
 
