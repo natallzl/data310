@@ -58,6 +58,8 @@ filter3 = [[-4, 0, -4], [2, 0, 2], [2, 0, 2]]
 
 <img src="flower_filter3.png" alt="drawing" width="300"/>
 
+## Pooling
+
 **Another useful method is pooling. Apply a 2x2 filter to one of your convolved images, and plot the result.**
 
 <img src="stair_pooling.png" alt="drawing" width="600"/>
@@ -76,3 +78,8 @@ filter3 = [[-4, 0, -4], [2, 0, 2], [2, 0, 2]]
 <img src="flower_pooling.png" alt="drawing" width="600"/>
 
 **Convolve the 3x3 filter over the 9x9 matrix and provide the resulting matrix.**
+
+
+Based on video: [Machine Learning Foundations: Ep #3 - Convolutions and Pooling](https://www.youtube.com/watch?v=PCgLmzkRM38&t=76s)
+
+Code: [Feb21Response.py]()
