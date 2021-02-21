@@ -113,4 +113,4 @@ The resulting image decreased in size, from 640x640 to 320x320. This would be us
 
 **Video source:** [Machine Learning Foundations: Ep #3 - Convolutions and Pooling](https://www.youtube.com/watch?v=PCgLmzkRM38&t=76s)
 
-**Code:** [Feb21Response.py]()
+**Code:** [Feb21Response.py](https://github.com/natallzl/data310/blob/main/Feb21Response.py)
