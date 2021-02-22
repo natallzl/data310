@@ -32,7 +32,7 @@ The third filter shows the vertical lines in the image very strongly, as well as
 
 **What are you functionally accomplishing as you apply the filter to your original array?**
 
-The 3x3 filter is applied to each pixel in the original array. For each pixel, the neighbor values (in a 3x3 area) are considered and the filter is used to calculate a new value for the pixel. The pixel and neighbor pixels are multiplied by the filter values and added up to create the new pixel value.  
+The 3x3 filter is applied to sets of 3x3 pixels in the original array. For each pixel, the neighbor values (in a 3x3 area) are considered and the filter is used to calculate a new value for the pixel. The pixel and neighbor pixels are multiplied by the filter values and added up to create the new pixel value for the new image. The filter is then moved over a column of pixels to the next set of 3x3 pixels, and applied again. 
 
 **Why is the application of a convolving filter to an image useful for computer vision?**
 
