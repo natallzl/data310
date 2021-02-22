@@ -112,6 +112,20 @@ The resulting image decreased in size, from 512x512 to 256x256. This would be us
 
 **Convolve the 3x3 filter over the 9x9 matrix and provide the resulting matrix.**
 
+<img src="convolve_matrices.png" alt="drawing" width="200"/>
+
+Result: 
+
+```
+[[0, 0, 0, 3, 0, 0, 0],
+ [0, 0, 0, 3, 0, 0, 0],
+ [1, 1, 1, 3, 1, 1, 1],
+ [1, 1, 1, 3, 1, 1, 1],
+ [1, 1, 1, 3, 1, 1, 1],
+ [0, 0, 0, 3, 0, 0, 0],
+ [0, 0, 0, 3, 0, 0, 0]]
+```
+
 
 **Video source:** [Machine Learning Foundations: Ep #3 - Convolutions and Pooling](https://www.youtube.com/watch?v=PCgLmzkRM38&t=76s)
 
