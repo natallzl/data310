@@ -77,7 +77,7 @@ Filter 3 appears to capture features almost opposite those of filter 2. The left
 
 **In effect what have you accomplished by applying this filter?**
 
-By applying this pooling filter, the size of the image is reduced but the features filtered by the convolving filter are still present. A 2x2 filter, such as this one, takes a 2x2 block (or four pixels) and ‘chooses’ (max/min/avg/etc.) a value to load into the new image. This reduces the size of the image, which can be seen in the dimensions of the original vs pooled image above - 640x640 is reduced to 320x320. 
+By applying this pooling filter, the size of the image is reduced but the features filtered by the convolving filter are still present. A 2x2 filter, such as this one, takes a 2x2 block (or four pixels) and ‘chooses’ (max/min/avg/etc.) a value to load into the new image. This reduces the size of the image, which can be seen in the dimensions of the original vs pooled image above - 512x512 is reduced to 256x256. 
 
 **Does there seem to be a logic (i.e. maximizing, averaging or minimizing values?) associated with the pooling filter provided in the example exercise (convolutions & pooling)?**
 
@@ -102,7 +102,7 @@ for x in range(0, size_x, 2):
 
 **Did the resulting image increase in size or decrease? Why would this method be useful?** 
 
-The resulting image decreased in size, from 640x640 to 320x320. This would be useful in making processing more time efficient because the features are maintained in the image, but the ‘noise’ is gone. The image is smaller so there is less information that needs to be processed by the computer. 
+The resulting image decreased in size, from 512x512 to 256x256. This would be useful in making processing more time efficient because the features are maintained in the image, but the ‘noise’ is gone. The image is smaller so there is less information that needs to be processed by the computer. 
 
 ***Stretch goal:*** **again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.**
 
