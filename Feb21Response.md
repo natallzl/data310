@@ -1,4 +1,4 @@
-## Convolutions
+### Convolutions
 
 **Modify the existing filter and if needed the associated weight in order to apply your new filters to the image 3 times. Plot each result, upload them to your response, and describe how each filter transformed the existing image as it convolved through the original array and reduced the object size.**
 
@@ -69,7 +69,7 @@ filter3 = [[-4, 0, -4], [2, 0, 2], [2, 0, 2]]
 Filter 3 appears to capture features almost opposite those of filter 2. The left side of the flower is more clearly outlined versus the right, and ‘top’ lines are more emphasized than lines on the ‘bottom’ or shadowed edges of the flower. 
 
 
-## Pooling
+### Pooling
 
 **Another useful method is pooling. Apply a 2x2 filter to one of your convolved images, and plot the result.**
 
@@ -108,7 +108,9 @@ The resulting image decreased in size, from 512x512 to 256x256. This would be us
 
 <img src="flower_pooling.png" alt="drawing" width="600"/>
 
-***Bonus:*** **Convolve the 3x3 filter over the 9x9 matrix and provide the resulting matrix.**
+### Bonus
+
+**Convolve the 3x3 filter over the 9x9 matrix and provide the resulting matrix.**
 
 
 **Video source:** [Machine Learning Foundations: Ep #3 - Convolutions and Pooling](https://www.youtube.com/watch?v=PCgLmzkRM38&t=76s)
