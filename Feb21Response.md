@@ -131,4 +131,4 @@ Result:
 
 **Code:** [Feb21Response.py](https://github.com/natallzl/data310/blob/main/Feb21Response.py)
 
-**Flower photo source:** [Unsplash](https://unsplash.com/photos/F6COrdbhFqQ)
+**Flower image source:** [Unsplash](https://unsplash.com/photos/F6COrdbhFqQ)
