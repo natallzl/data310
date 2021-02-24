@@ -130,3 +130,5 @@ Result:
 **Video source:** [Machine Learning Foundations: Ep #3 - Convolutions and Pooling](https://www.youtube.com/watch?v=PCgLmzkRM38&t=76s)
 
 **Code:** [Feb21Response.py](https://github.com/natallzl/data310/blob/main/Feb21Response.py)
+
+**Flower photo source:** [Unsplash](https://unsplash.com/photos/F6COrdbhFqQ)
