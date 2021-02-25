@@ -2,7 +2,6 @@
 ## Natalie Larsen
 
 ### Exercises
-#### Module 1
 - [Feb. 5 Response](https://natallzl.github.io/data310/Feb5Response.html)
   - [Feb. 5 Response (update)](Feb5Response_update.md)
 - [Feb. 8 Response](https://natallzl.github.io/data310/Feb8Response.html)
