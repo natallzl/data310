@@ -58,13 +58,21 @@ Second 3x3 matrix and resulting 7x7 matrix:
 
 *The 10 biggest over-predictions*
 
+MSE = 12018751.518797165
+
 *The 10 biggest under-predictions*
 
+MSE = 281355803.96214515
+
 *The 10 most accurate results (use absolute value)*
+
+MSE = 9214.230143046076
 
 **In which percentile do the 10 most accurate predictions reside?**
 
 **Did your model trend towards over or under predicting home values?**
+
+My model trended towards over-predicting home values; 333 homes cost less than predicted, and 67 homes cost more than predicted. 
 
 **Which feature appears to be the most significant predictor in the above cases?**
 
