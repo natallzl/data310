@@ -35,7 +35,7 @@ sandiego_homes[['price_diff']] = sandiego_homes['predicted_price'] - sandiego_ho
 sandiego_homes.to_csv('sandiego_homes.csv', index=False)
 
 ###################
-#MSE calculation
+# MSE calculation
 ###################
 
 #sort dataframe by price_diff
