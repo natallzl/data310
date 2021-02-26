@@ -54,7 +54,7 @@ Using a filter to convolve across a 2D image matrix is helpful in getting the mo
 
 **Why would we include more than one filter? How many filters did you assign as part of your architecture when training a model to learn images of numbers from the mnist dataset?**
 
-We might include more than one filter to emphasize multiple features in an image. Or, we might utilize a pooling filter in addition to a convolution filter to make the image smaller. I think only one filter was assigned when training a model - unless the Flatten and each Dense layer (relu and softmax) are considered filters, then three filters were assigned as part of the architecture when training the mnist model. 
+We might include more than one filter to emphasize multiple features in an image. Or, we might utilize a pooling filter in addition to a convolution filter to make the image smaller. I think only one filter was assigned when training the mnist model - unless the Flatten and each Dense layer (relu and softmax) are considered filters, then three filters were assigned as part of the architecture when training the model. 
 
 ### MSE
 
@@ -82,6 +82,6 @@ My model trended towards over-predicting home values; 333 homes cost less than p
 
 **Which feature appears to be the most significant predictor in the above cases?**
 
-It's a little hard to tell which feature is the most significant predictor, but for the ten most accurate predictions and ten over-predictions, it appears that number of bedrooms is the most significant predictor. For the under-predictions, it appears that square footage may be the most significant predictor, but that is more difficult to determine. As briefly mentioned last class, we could also look at location. I looked at homes in San Diego, so I suspect location (ie oceanfront or not) may be a significant predictor for home price in this city. 
+It's a little hard to tell which feature is the most significant predictor, but for the ten most accurate predictions and ten over-predictions, it appears that number of bedrooms is the most significant predictor. For the under-predictions, it appears that square footage may be the most significant predictor, but that is more difficult to determine. As briefly mentioned last class, we could also look at location. I looked at homes in San Diego, so I suspect location (ie oceanfront or not) is a significant predictor for home price in this city. 
 
 **Code:** [Feb26Response.py](https://github.com/natallzl/data310/blob/main/Feb26Response.py)
