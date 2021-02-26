@@ -56,15 +56,15 @@ Second 3x3 matrix and resulting 7x7 matrix:
 
 **From your 400+ observations of homes for sale, calculate the MSE for the following:**
 
-*The 10 biggest over-predictions*
+*The 10 biggest over-predictions:*
 
 MSE = 12018751.518797165
 
-*The 10 biggest under-predictions*
+*The 10 biggest under-predictions:*
 
 MSE = 281355803.96214515
 
-*The 10 most accurate results (use absolute value)*
+*The 10 most accurate results (use absolute value):*
 
 MSE = 9214.230143046076
 
