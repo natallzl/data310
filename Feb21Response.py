@@ -103,3 +103,5 @@ plt.imshow(newImage)
 #plt.axis('off')
 plt.show()
 
+# Note: For the 3x3 convolution over the 9x9 matrix, I wrote it out on paper and followed the steps in this source:
+  #https://towardsdatascience.com/a-beginners-guide-to-convolutional-neural-networks-cnns-14649dbddce8 (posted on Slack by J.Mo)
