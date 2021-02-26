@@ -82,6 +82,4 @@ My model trended towards over-predicting home values; 333 homes cost less than p
 
 **Which feature appears to be the most significant predictor in the above cases?**
 
-In the most accurate results, the number of bedrooms and bathrooms is pretty similar, so square footage appears to be the most significant predictor. It also appears to be the same case for over-predictions, square footage appears to be the most significant predictor. For under-predictions, square footage is not as varied, so it appears that either number of bedrooms or number of bathrooms is the most significant predictor, but I can't tell which. 
-
 ***Stretch goal:*** **calculate the MAE and compare with your MSE results**
