@@ -50,7 +50,11 @@ Second 3x3 matrix and resulting 7x7 matrix:
 
 **What is the purpose of using a 3x3 filter to convolve across a 2D image matrix?**
 
+Using a filter to convolve across a 2D image matrix is helpful in getting the most important features of the image for more efficient processing. For example, a filter over the stair photo can emphasize the vertical or horizontal lines in the image. 
+
 **Why would we include more than one filter? How many filters did you assign as part of your architecture when training a model to learn images of numbers from the mnist dataset?**
+
+We might include more than one filter to emphasize multiple features in an image. Or, we might utilize a pooling filter in addition to a convolution filter to make the image smaller. 
 
 ### MSE
 
