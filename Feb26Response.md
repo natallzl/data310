@@ -83,3 +83,5 @@ My model trended towards over-predicting home values; 333 homes cost less than p
 **Which feature appears to be the most significant predictor in the above cases?**
 
 ***Stretch goal:*** **calculate the MAE and compare with your MSE results**
+
+**Code:** [Feb26Response.py](https://github.com/natallzl/data310/blob/main/Feb26Response.py)
