@@ -74,10 +74,14 @@ MSE = 9214.230143046076
 
 **In which percentile do the 10 most accurate predictions reside?**
 
+I wasn't sure whether to look at percentiles of observed or predicted prices, so I did both. The predicted prices for the 10 most accurate predictions reside between the 1st and 78th percentiles ($1,472,031 - $2,567,084). The observed prices for the 10 most accurate predictions reside between the 77th and 84th percentiles ($1,495,000 - $2,547,960).
+
 **Did your model trend towards over or under predicting home values?**
 
 My model trended towards over-predicting home values; 333 homes cost less than predicted, and 67 homes cost more than predicted. 
 
 **Which feature appears to be the most significant predictor in the above cases?**
+
+In the most accurate results, the number of bedrooms and bathrooms is pretty similar, so square footage appears to be the most significant predictor. It also appears to be the same case for over-predictions, square footage appears to be the most significant predictor. For under-predictions, square footage is not as varied, so it appears that either number of bedrooms or number of bathrooms is the most significant predictor, but I can't tell which. 
 
 ***Stretch goal:*** **calculate the MAE and compare with your MSE results**
