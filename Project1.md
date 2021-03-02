@@ -31,6 +31,22 @@ Finally, below is a table of descriptive statistics for the housing data scraped
 
 **Description of the model architecture:**
 
+The model architecture is pretty much identical to the model that was previously used to predict prices of homes in Mathews, VA (Feb. 5 Response). The model takes three independent variables - number of bedrooms, square footage, and number of bathrooms - and uses this input to predict home price. The model uses a Sequential model with one dense layer, with an input shape of three for each of the input variables. Square footage was scaled down by 1000, and price was scaled down by 100,000, in order to normalize the larger values for processing. The model ran for 500 epochs, fitting the model for the input variables and observed prices, and then was used to predict price for the scraped San Diego homes. See model code below:
+
+```
+model = tf.keras.Sequential([keras.layers.Dense(units=1, input_shape=[3])])
+model.compile(optimizer='sgd', loss='mean_squared_error')
+x1 = np.array(homes.iloc[:,2], dtype=float)              #number of bedrooms
+x2 = np.array(homes.iloc[:,6], dtype=float)              #sqft(/1000)
+x3 = np.array(homes.iloc[:,3], dtype=float)              #number of bathrooms
+xs = np.stack([x1, x2, x3], axis=1)
+ys = np.array(homes.iloc[:,5], dtype=float)              #price(/100000)
+
+history = model.fit(xs, ys, epochs=500)
+
+prediction = model.predict(xs)
+```
+
 **Analysis of model output:**
 
 **Analysis of the output that assesses and ranks all homes from best to worst deal:**
