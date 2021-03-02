@@ -6,9 +6,10 @@
 
 **Following the previous model you specified (6 houses in Mathews; see Feb. 5 Response), import your new data set and train a new model on your target and features.**
 
-**Write a one and a half to two page report on your results and include the following:**
+**Description of the scraped housing data:**
 
-*A description of the housing data you scraped from zillow*
+I obtained 400 observations from San Diego, CA. Below is a table of descriptive statistics for the housing data scraped from Zillow:
+
 
 |      |  Home Price     | Number of Bedrooms     | Number of Bathrooms |  Square Footage | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -20,12 +21,12 @@
 | **75%**      | $1,385,000       | 4      | 3       | 1875      |
 | **maximum**     | $25,000,000       | 8       | 10       | 8694       |
 
-*A description of your model architecture*
 
-*An analysis of your model output*
+**Description of the model architecture:**
 
-*An analysis of the output that assesses and ranks all homes from best to worst deal*
+**Analysis of model output:**
 
-*Include at least three plots that support your project report*
+**Analysis of the output that assesses and ranks all homes from best to worst deal:**
+
 
 ***Stretch goal:*** **add a spatial variable to your feature set and compare with the original model. Did this improve the predictive power of your model? If so, how?**
