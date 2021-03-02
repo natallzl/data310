@@ -10,7 +10,7 @@ I obtained 400 observations from San Diego, CA. Below are some basic barplots th
 
 <img src="home_boxplots.png" alt="drawing" width="600"/>
 
-As is evident from the boxplots, there are quite a few outliers in the data, particularly when looking at home price. There is a large range in prices; the least expensive home is $7,900 and the most expensive home is $25 million. Though the maximum price is quite high, the mean home price is $1,878,278.86 and the median home price is $699,999.5, and most homes fall between $450,000 and $1,385,000. The barplot below is an additional visualization that shows the postive skewness of the price data. 
+As is evident from the boxplots, there are quite a few outliers in the data, particularly when looking at home price. There is a large range in prices; the least expensive home is $7,900 and the most expensive home is $25 million. Though the maximum price is quite high, the mean home price is $1,878,278.86 and the median home price is $699,999.5, and most homes fall between $450,000 and $1,385,000. The plot below is an additional visualization that shows the postive skewness of the price data. 
 
 <img src="home_prices_barplot2.png" alt="drawing" width="600"/>
 
