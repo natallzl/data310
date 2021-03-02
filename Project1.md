@@ -6,11 +6,15 @@
 
 **Description of the scraped housing data:**
 
-I obtained 400 observations from San Diego, CA. There was quite the range in home prices; the least expensive home is $7,900 and the most expensive home is $25 mil. Though the maximum price is quite high, the mean home price is $1,878,278.86 and the median home price is $699,999.5, and most homes fall between $450,000 and $1,385,000.
+I obtained 400 observations from San Diego, CA. 
 
 <img src="home_boxplots.png" alt="drawing" width="600"/>
 
-Below is a table of descriptive statistics for the housing data scraped from Zillow:
+As is evident from the barplots, there are quite a few outliers in this data. There was quite the range in home prices; the least expensive home is $7,900 and the most expensive home is $25 mil. Though the maximum price is quite high, the mean home price is $1,878,278.86 and the median home price is $699,999.5, and most homes fall between $450,000 and $1,385,000.
+
+<img src="home_prices_barplot.png" alt="drawing" width="600"/>
+
+Finally, below is a table of descriptive statistics for the housing data scraped from Zillow:
 
 
 |      |  Home Price     | Number of Bedrooms     | Number of Bathrooms |  Square Footage | 
