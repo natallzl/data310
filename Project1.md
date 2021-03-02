@@ -17,7 +17,7 @@ As is evident from the boxplots, there are quite a few outliers in the data, par
 Finally, below is a table of descriptive statistics for the housing data scraped from Zillow:
 
 
-|      |  Home Price     | Number of Bedrooms     | Number of Bathrooms |  Square Footage | 
+|      |  Home Price     | Number of Bedrooms     | Number of Bathrooms |  Total Square Footage | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | **mean**      | $1,878,278.86      | 3.28       | 2.89        | 1992.51      |
 | **standard deviation**     | $3,477,728.46    | 1.29     | 1.81     | 1676.09       |
