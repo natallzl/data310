@@ -51,5 +51,23 @@ prediction = model.predict(xs)
 
 **Analysis of the output that assesses and ranks all homes from best to worst deal:**
 
+Ten best deals (model over-predicted price):
+
+|  Address     | Actual Price    | Predicted Price |  Difference (Predicted - Actual) | 
+| ----------- | ----------- | ----------- | ----------- |
+|  0 No Name Rd San Diego CA 92154      | $55,000      | $2,423,735.05 | +$2,368,735.05        |
+|   1661 Bayview Heights Dr UNIT 21 San Diego CA 92105       | $270,000     | $2,602,025.99 | +$2,332,025.99       |
+|    3500 Trenton Ave San Diego CA 92117       | $229,000     | $2,390,641.78 | +$2,161,641.79      |
+|     4918 1/2 Old Cliffs Rd San Diego CA 92120      | $239,900     | $2,390,641.78 | +$2,150,741.78     |
+|      3133 Logan Ave San Diego CA 92113       | $500,000     | $2,602,025.99 | +$2,102,025.99     |
+|       2950 Iris Ave SPACE 45 San Diego CA 92154        | $119,000    | $2,166,531.37 | +$2,047,531.37     |
+|        0 Spring Canyon Rd San Diego CA 92131        | $132,000    | $2,166,531.37 | +$2,034,531.37    |
+|         875 G St UNIT 411 San Diego CA 92101        | $398,000    | $2,383,777.81 | +$1,985,777.81   |
+|          425 W Beech St UNIT 515 San Diego CA 92101         | $499,000    | $2,423,735.05 | +$1,924,735.05  |
+|           5165 Calle Sandwaves UNIT 2 San Diego CA 92154          | $565,000   | $2,423,735.05 | +$1,858,735.05  |
+
+
+Ten worst deals (model under-predicted price):
+
 
 ***Stretch goal:*** **add a spatial variable to your feature set and compare with the original model. Did this improve the predictive power of your model? If so, how?**
