@@ -69,5 +69,18 @@ Ten best deals (model over-predicted price):
 
 Ten worst deals (model under-predicted price):
 
+|  Address     | Actual Price    | Predicted Price |  Difference (Predicted - Actual) | 
+| ----------- | ----------- | ----------- | ----------- |
+|   5228 Chelsea St La Jolla CA 92037       | $     | $ | -       |
+|    1320 Muirlands Dr La Jolla CA 92037        | $     | $ | -      |
+|     6251 La Jolla Scenic Dr S La Jolla CA 92037        | $     | $ | -      |
+|     9860 La Jolla Farms Rd La Jolla CA 92037       | $    | $ | -    |
+|      3 7505 Hillside Dr La Jolla CA 92037        | $   | $ | -    |
+|        6089 La Jolla Scenic Dr S La Jolla CA 92037         | $   | $ | -     |
+|         6392 Camino De La Costa La Jolla CA 92037         | $   | $ | -    |
+|          3540 Kellogg Way San Diego CA 92106        | $    | $ | -   |
+|           1330 Inspiration Dr La Jolla CA 92037         | $   | $ | -  |
+|            5850 Camino De La Costa La Jolla CA 92037          | $  | $ | -  |
+
 
 ***Stretch goal:*** **add a spatial variable to your feature set and compare with the original model. Did this improve the predictive power of your model? If so, how?**
