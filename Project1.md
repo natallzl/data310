@@ -6,7 +6,7 @@ Home information (price, number of bedrooms, number of bathrooms, and total squa
 
 **Description of the scraped housing data:**
 
-I obtained 400 observations from San Diego, CA. Below are some basic barplots that visualize the scraped housing data for number of bedrooms, number of bathrooms, square footage, and price. Most observed homes in San Diego, CA had between 2-4 bedrooms, 2-3 bathrooms, a square footage between 1144 and 1875 square feet, and cost between $450,000 and $1,385,000. As evident in the boxplots, there are outliers for all variables scraped and these outliers exist on the higher end of the data. Because of these outliers, the mean is greater than the median for all of the variables (see table below for exact statistics). 
+I obtained 400 observations from San Diego, CA. Below are some basic barplots that visualize the scraped housing data for number of bedrooms, number of bathrooms, square footage, and price. Most observed homes in San Diego, CA had between 2-4 bedrooms, 2-3 bathrooms, a square footage between 1144 and 1875 square feet, and cost between $450,000 and $1,385,000. As evident in the boxplots, there are outliers for all variables scraped and these outliers exist on the higher end of the data. Because of these outliers, the data are skewed and the mean is greater than the median for all of the variables (see table below for exact statistics). 
 
 <img src="home_boxplots.png" alt="drawing" width="600"/>
 
