@@ -49,7 +49,21 @@ prediction = model.predict(xs)
 
 **Analysis of model output:**
 
+The model was not very accurate. The mean squared error was very large, 12205556536413.553. In the plot below, the line shows where the predicted price would match the actual price; points above this line are cases where the predicted value was more than the actual value (home is a good value), and points below this line are cases where the predicted value was less than the actual value (home is a bad value). The majority of points fall below or above the line, showing the model was not very accurate in its prediction. 
+
+<img src="homes_actualvpredicted_plot.png" alt="drawing" width="600"/>
+
+Additionally, mean squared error was calculated using different scalars for comparison:
+mean square error: 12205556536413.553
+mean square error: 11901481495874.086 (standard scalar)
+mean square error: 12208860380666.217 (min/max scalar)
+mean square error: 11897106208425.105 (robust scalar)
+
+The mean square error was slightly smaller when calculated using the standard and robust scalars, but was still very large. This is very likely because the model is fairly simple and only considers number of bedrooms, number of bathrooms, and square footage, when there are many other factors that go into pricing a home. 
+
 **Analysis of the output that assesses and ranks all homes from best to worst deal:**
+
+89 homes cost more than predicted, while 311 cost less than predicted, so the model trended towards over-predicting home values. Difference between predicted and actual price was calculated by subtracting the actual price from predicted, so a negative difference means the model under-predicted the price and the actual price is a bad deal, and a positive difference means the model over-predicted the price and the actual price is a good deal. Below are the top ten best and worst deals, based on the greatest difference in predicted and actual price (positive and negative).
 
 Ten best deals based on model (model over-predicted price):
 
