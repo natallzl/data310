@@ -105,6 +105,6 @@ Ten worst deals based on model (model under-predicted price):
 |            5850 Camino De La Costa La Jolla CA 92037          | $13,595,000  | $1,804,958.72 | -$11,790,041.28  |
 
 
-Looking at these top best and worst deals, it appears that home location may play a big role in the price of the home; the homes that are the worst deals are almost all located in the La Jolla neighborhood of San Diego, which is known for seaside living and ocean views. 
+Looking at the best and worst deals, it appears that home location may play a big role in the price of the home; the homes that are the worst deals are almost all located in the La Jolla neighborhood of San Diego, which is known for seaside living and ocean views. 
 
 **Code:** [project1.py](https://github.com/natallzl/data310/blob/main/project1.py)
