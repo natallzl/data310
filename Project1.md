@@ -49,7 +49,7 @@ prediction = model.predict(xs)
 
 **Analysis of model output:**
 
-The model was not very accurate. The mean squared error was very large, 12205556536413.553. In the plot below, the line shows where the predicted price would match the actual price; points above this line are cases where the predicted value was more than the actual value (home is a good value), and points below this line are cases where the predicted value was less than the actual value (home is a bad value). The majority of points fall below or above the line, showing the model was not very accurate in its prediction. 
+The model was not very accurate. The mean squared error was very large, 12205556536413.553. In the plot below, the line shows where the predicted price would match the actual price; points above this line are instances where the predicted value was more than the actual value (home is a good value), and points below this line are instances where the predicted value was less than the actual value (home is a bad value). The majority of points fall below or above the line, showing the model was not very accurate in its prediction. 
 
 <img src="homes_actualvpredicted_plot.png" alt="drawing" width="600"/>
 
@@ -63,7 +63,11 @@ The mean square error was slightly smaller when calculated using the standard an
 
 **Analysis of the output that assesses and ranks all homes from best to worst deal:**
 
-89 homes cost more than predicted, while 311 cost less than predicted, so the model trended towards over-predicting home values. Difference between predicted and actual price was calculated by subtracting the actual price from predicted, so a negative difference means the model under-predicted the price and the actual price is a bad deal, and a positive difference means the model over-predicted the price and the actual price is a good deal. Below are the top ten best and worst deals, based on the greatest difference in predicted and actual price (positive and negative).
+89 homes cost more than predicted, while 311 cost less than predicted, so the model trended towards over-predicting home values. Difference between predicted and actual price was calculated by subtracting the actual price from predicted, so a negative difference means the model under-predicted the price and the actual price is a bad deal, and a positive difference means the model over-predicted the price and the actual price is a good deal. 
+
+<img src="homes_actualvdiff_plot.png" alt="drawing" width="600"/>
+
+In the plot above, we can see clustered points located above zero on the y-axis, which shows the homes with over-predicted prices, or homes with good values. Points located where the y-axis value is less than zero are instances where the home price is under-predicted, or the home is a bad value. The plot indicates that homes with lower actual cost are good deals, and homes with higher actual cost are bad deals, based on the model. See below for more details on the top ten best and worst deals, based on the greatest difference in predicted and actual price (positive and negative).
 
 Ten best deals based on model (model over-predicted price):
 
@@ -97,7 +101,4 @@ Ten worst deals based on model (model under-predicted price):
 |            5850 Camino De La Costa La Jolla CA 92037          | $13,595,000  | $1,804,958.72 | -$11,790,041.28  |
 
 
-Looking at these top best and worst deals, it appears that home location may play a big role in the price of the home; the ten worst deals are all homes located in the La Jolla neighborhood of San Diego, which is known for seaside living and ocean views. 
-
-
-***Stretch goal:*** **add a spatial variable to your feature set and compare with the original model. Did this improve the predictive power of your model? If so, how?**
+Looking at these top best and worst deals, it appears that home location may play a big role in the price of the home; the ten worst deals are almost all homes located in the La Jolla neighborhood of San Diego, which is known for seaside living and ocean views. 
