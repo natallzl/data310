@@ -74,13 +74,13 @@ Ten worst deals (model under-predicted price):
 |   5228 Chelsea St La Jolla CA 92037       | $25,000,000     | $1,710,117.34 | -$23,289,882.66       |
 |    1320 Muirlands Dr La Jolla CA 92037        | $22,995,000     | $2,383,777.81 | -$20,611,222.19      |
 |     6251 La Jolla Scenic Dr S La Jolla CA 92037        | $22,000,000     | $1,505,485.53 | -$20,494,514.47     |
-|     9860 La Jolla Farms Rd La Jolla CA 92037       | $    | $ | -    |
-|      3 7505 Hillside Dr La Jolla CA 92037        | $   | $ | -    |
-|        6089 La Jolla Scenic Dr S La Jolla CA 92037         | $   | $ | -     |
-|         6392 Camino De La Costa La Jolla CA 92037         | $   | $ | -    |
-|          3540 Kellogg Way San Diego CA 92106        | $    | $ | -   |
-|           1330 Inspiration Dr La Jolla CA 92037         | $   | $ | -  |
-|            5850 Camino De La Costa La Jolla CA 92037          | $  | $ | -  |
+|     9860 La Jolla Farms Rd La Jolla CA 92037       | $22,995,000    | $2,602,025.99 | -20,392,974.01    |
+|      3 7505 Hillside Dr La Jolla CA 92037        | $17,950,000   | $1,272,596.36 | -16,677,403.64  |
+|        6089 La Jolla Scenic Dr S La Jolla CA 92037         | $17,450,000   | $1,474,122.14 | -$15,975,877.86     |
+|         6392 Camino De La Costa La Jolla CA 92037         | $16,988,000   | $1,466,222.57 | -$15,521,777.43    |
+|          3540 Kellogg Way San Diego CA 92106        | $15,000,000    | $1,466,222.57 | -$13,533,777.43   |
+|           1330 Inspiration Dr La Jolla CA 92037         | $13,500,000   | $1,459,646.42 | -$12,040,353.58  |
+|            5850 Camino De La Costa La Jolla CA 92037          | $13,595,000  | $1,804,958.72 | -$11,790,041.28  |
 
 
 ***Stretch goal:*** **add a spatial variable to your feature set and compare with the original model. Did this improve the predictive power of your model? If so, how?**
