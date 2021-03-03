@@ -73,7 +73,7 @@ The mean squared error was slightly smaller when calculated using the standard a
 
 In the plot above, we can see clustered points located above a difference of zero. These are the homes with over-predicted prices, or homes with good values. Points located where the difference is less than zero are instances where the home price is under-predicted, or the home is a bad value. The plot indicates that homes that cost less tend to be good deals, and homes that cost more tend to be bad deals, based on the model. 
 
-Ten best deals based on model (model over-predicted price):
+Ten best deals (model over-predicted price):
 
 |  Address     | Actual Price    | Predicted Price |  Difference (Predicted - Actual) | 
 | ----------- | ----------- | ----------- | ----------- |
@@ -89,7 +89,7 @@ Ten best deals based on model (model over-predicted price):
 |           5165 Calle Sandwaves UNIT 2 San Diego CA 92154          | $565,000   | $2,423,735.05 | +$1,858,735.05  |
 
 
-Ten worst deals based on model (model under-predicted price):
+Ten worst deals (model under-predicted price):
 
 |  Address     | Actual Price    | Predicted Price |  Difference (Predicted - Actual) | 
 | ----------- | ----------- | ----------- | ----------- |
