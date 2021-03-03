@@ -2,7 +2,7 @@
 
 ### Homes in San Diego, CA
 
-Home information (price, number of bedrooms, number of bathrooms, and total square footage) for San Diego, CA was obtained by scraping Zillow listings using the zillow_scrape.py script provided to us in class. This script output a .csv file, which was then read into my project1.py script; linked at the bottom of the page. In that script, the scraped data was imported and used to train a model to predict home price and plots were created to visualize the data and model outcome. 
+Information (price, number of bedrooms, number of bathrooms, and total square footage) for homes in San Diego, CA was obtained by scraping Zillow listings using the zillow_scrape.py script provided to us in class. This script output a .csv file, which was then read into my project1.py script; linked at the bottom of the page. In that script, the scraped data was imported and used to train a model to predict home price, and plots were created to visualize the data and model outcome. 
 
 **Description of the scraped housing data:**
 
@@ -31,7 +31,7 @@ Finally, below is a table of descriptive statistics for the housing data scraped
 
 **Description of the model architecture:**
 
-The model architecture is pretty much identical to the model that was previously used to predict prices of homes in Mathews, VA (Feb. 5 Response). The model takes three independent variables - number of bedrooms, square footage, and number of bathrooms - and uses this input to predict home price. The model uses a Sequential model with one dense layer, with an input shape of three for each of the input variables. Square footage was scaled down by 1000, and price was scaled down by 100,000, in order to normalize the larger values for processing. The model ran for 500 epochs, fitting the model for the input variables and observed prices, and then was used to predict price for the scraped San Diego homes. See model code below:
+The model architecture is pretty much identical to the model that was previously used to predict prices of homes in Mathews, VA (Feb. 5 Response). The model takes three independent variables - number of bedrooms, square footage, and number of bathrooms - and uses this input to predict home price. The model is a Sequential model with one dense layer, with an input shape of three for each of the input variables. Square footage was scaled down by 1000 and price was scaled down by 100,000, in order to normalize the larger values for processing. The model ran for 500 epochs, fitting the model using the input variables and observed prices. Then, the model was used to predict price for the scraped San Diego homes. See model code below:
 
 ```
 model = tf.keras.Sequential([keras.layers.Dense(units=1, input_shape=[3])])
@@ -49,14 +49,18 @@ prediction = model.predict(xs)
 
 **Analysis of model output:**
 
-The model was not very accurate. The mean squared error was very large, 12205556536413.553. In the plot below, the line shows where the predicted price would match the actual price; points above this line are instances where the predicted value was more than the actual value (home is a good value), and points below this line are instances where the predicted value was less than the actual value (home is a bad value). The majority of points fall below or above the line, showing the model was not very accurate in its prediction. 
+The model was not very accurate. The mean squared error was very large, 12205556536413.553. In the plot below, the line shows where the predicted price is the same as the actual price; points above this line are instances where the predicted price was more than the actual price (home is a good value), and points below this line are instances where the predicted price was less than the actual price (home is a bad value). The majority of points fall below or above the line, showing the model was not very accurate in its prediction. 
 
 <img src="homes_actualvpredicted_plot.png" alt="drawing" width="600"/>
 
 Additionally, mean squared error was calculated using different scalars for comparison:
+
 mean squared error: 12205556536413.553
+
 mean squared error: 11901481495874.086 (standard scalar)
+
 mean squared error: 12208860380666.217 (min/max scalar)
+
 mean squared error: 11897106208425.105 (robust scalar)
 
 The mean squared error was slightly smaller when calculated using the standard and robust scalars, but was still very large. This is very likely because the model is quite simple and only considers number of bedrooms, number of bathrooms, and square footage, when there are many other factors that go into pricing a home. Additionally, there are a lot of large outliers in the data, so removing them would likely improve model accuracy and decrease mean squared error. 
