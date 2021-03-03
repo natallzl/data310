@@ -63,15 +63,15 @@ mean squared error: 12208860380666.217 (min/max scalar)
 
 mean squared error: 11897106208425.105 (robust scalar)
 
-The mean squared error was slightly smaller when calculated using the standard and robust scalars, but was still very large. This is very likely because the model is quite simple and only considers number of bedrooms, number of bathrooms, and square footage, when there are many other factors that go into pricing a home. Additionally, there are a lot of large outliers in the data, so removing them would likely improve model accuracy and decrease mean squared error. 
+The mean squared error was slightly smaller when calculated using the standard and robust scalars, but was still very large. This is very likely because the model is quite simple and only considers number of bedrooms, number of bathrooms, and square footage as independent variables, when there are many other factors that go into pricing a home. Additionally, there are a lot of large outliers in the data and removing them would likely improve model accuracy and decrease mean squared error. 
 
 **Analysis of the output that assesses and ranks all homes from best to worst deal:**
 
-89 homes cost more than predicted, while 311 cost less than predicted, so the model trended towards over-predicting home values. Difference between predicted and actual price was calculated by subtracting the actual price from predicted, so a negative difference means the model under-predicted the price and the actual price is a bad deal, and a positive difference means the model over-predicted the price and the actual price is a good deal. 
+89 homes cost more than predicted, while 311 cost less than predicted, so the model trended towards over-predicting home values. Difference between predicted and actual price was calculated by subtracting the actual price from predicted. So, a negative difference means the model under-predicted the price and the actual price is a bad deal, and a positive difference means the model over-predicted the price and the actual price is a good deal. 
 
 <img src="homes_actualvdiff_plot.png" alt="drawing" width="600"/>
 
-In the plot above, we can see clustered points located above zero on the y-axis, which shows the homes with over-predicted prices, or homes with good values. Points located where the y-axis value is less than zero are instances where the home price is under-predicted, or the home is a bad value. The plot indicates that homes with lower actual cost are good deals, and homes with higher actual cost are bad deals, based on the model. See below for more details on the top ten best and worst deals, based on the greatest difference in predicted and actual price (positive and negative).
+In the plot above, we can see clustered points located above a difference of zero. These are the homes with over-predicted prices, or homes with good values. Points located where the difference is less than zero are instances where the home price is under-predicted, or the home is a bad value. The plot indicates that homes that cost less tend to be good deals, and homes that cost more tend to be bad deals, based on the model. See below for more details on the top ten best and worst deals, based on the greatest difference in predicted and actual price (positive and negative).
 
 Ten best deals based on model (model over-predicted price):
 
