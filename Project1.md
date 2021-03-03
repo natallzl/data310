@@ -54,12 +54,12 @@ The model was not very accurate. The mean squared error was very large, 12205556
 <img src="homes_actualvpredicted_plot.png" alt="drawing" width="600"/>
 
 Additionally, mean squared error was calculated using different scalars for comparison:
-mean square error: 12205556536413.553
-mean square error: 11901481495874.086 (standard scalar)
-mean square error: 12208860380666.217 (min/max scalar)
-mean square error: 11897106208425.105 (robust scalar)
+mean squared error: 12205556536413.553
+mean squared error: 11901481495874.086 (standard scalar)
+mean squared error: 12208860380666.217 (min/max scalar)
+mean squared error: 11897106208425.105 (robust scalar)
 
-The mean square error was slightly smaller when calculated using the standard and robust scalars, but was still very large. This is very likely because the model is quite simple and only considers number of bedrooms, number of bathrooms, and square footage, when there are many other factors that go into pricing a home. 
+The mean squared error was slightly smaller when calculated using the standard and robust scalars, but was still very large. This is very likely because the model is quite simple and only considers number of bedrooms, number of bathrooms, and square footage, when there are many other factors that go into pricing a home. Additionally, there are a lot of large outliers in the data, so removing them would likely improve model accuracy and decrease mean squared error. 
 
 **Analysis of the output that assesses and ranks all homes from best to worst deal:**
 
