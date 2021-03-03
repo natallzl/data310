@@ -2,7 +2,7 @@
 
 ### Homes in San Diego, CA
 
-Home information (price, number of bedrooms, number of bathrooms, and total square footage) for San Diego, CA was obtained through scraping Zillow listings using the zillow_scrape.py script provided to us in class. This script output a .csv file, which was then read into my project1.py script; linked at the bottom of the page. In that script, the scraped data was imported and used to train a model to predict home price and plots were created to visualize the data and model outcome. 
+Home information (price, number of bedrooms, number of bathrooms, and total square footage) for San Diego, CA was obtained by scraping Zillow listings using the zillow_scrape.py script provided to us in class. This script output a .csv file, which was then read into my project1.py script; linked at the bottom of the page. In that script, the scraped data was imported and used to train a model to predict home price and plots were created to visualize the data and model outcome. 
 
 **Description of the scraped housing data:**
 
@@ -59,7 +59,7 @@ mean square error: 11901481495874.086 (standard scalar)
 mean square error: 12208860380666.217 (min/max scalar)
 mean square error: 11897106208425.105 (robust scalar)
 
-The mean square error was slightly smaller when calculated using the standard and robust scalars, but was still very large. This is very likely because the model is fairly simple and only considers number of bedrooms, number of bathrooms, and square footage, when there are many other factors that go into pricing a home. 
+The mean square error was slightly smaller when calculated using the standard and robust scalars, but was still very large. This is very likely because the model is quite simple and only considers number of bedrooms, number of bathrooms, and square footage, when there are many other factors that go into pricing a home. 
 
 **Analysis of the output that assesses and ranks all homes from best to worst deal:**
 
@@ -95,6 +95,9 @@ Ten worst deals based on model (model under-predicted price):
 |          3540 Kellogg Way San Diego CA 92106        | $15,000,000    | $1,466,222.57 | -$13,533,777.43   |
 |           1330 Inspiration Dr La Jolla CA 92037         | $13,500,000   | $1,459,646.42 | -$12,040,353.58  |
 |            5850 Camino De La Costa La Jolla CA 92037          | $13,595,000  | $1,804,958.72 | -$11,790,041.28  |
+
+
+Looking at these top best and worst deals, it appears that home location may play a big role in the price of the home; the ten worst deals are all homes located in the La Jolla neighborhood of San Diego, which is known for seaside living and ocean views. 
 
 
 ***Stretch goal:*** **add a spatial variable to your feature set and compare with the original model. Did this improve the predictive power of your model? If so, how?**
