@@ -49,7 +49,7 @@ prediction = model.predict(xs)
 
 **Analysis of model output:**
 
-The model was not very accurate. The mean squared error was very large, 12205556536413.553. In the plot below, the line shows where the predicted price is the same as the actual price; points above this line are instances where the predicted price was more than the actual price (home is a good value), and points below this line are instances where the predicted price was less than the actual price (home is a bad value). The majority of points fall below or above the line, showing the model was not very accurate in its prediction. 
+The model was not very accurate. The mean squared error was very large, 12205556536413.553. In the plot below, the line shows where the predicted price is the same as the actual price; points above this line are instances where the predicted price was more than the actual price (home is a good value), and points below this line are instances where the predicted price was less than the actual price (home is a bad value).
 
 <img src="homes_actualvpredicted_plot.png" alt="drawing" width="600"/>
 
