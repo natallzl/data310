@@ -51,7 +51,7 @@ prediction = model.predict(xs)
 
 **Analysis of the output that assesses and ranks all homes from best to worst deal:**
 
-Ten best deals (model over-predicted price):
+Ten best deals based on model (model over-predicted price):
 
 |  Address     | Actual Price    | Predicted Price |  Difference (Predicted - Actual) | 
 | ----------- | ----------- | ----------- | ----------- |
@@ -67,7 +67,7 @@ Ten best deals (model over-predicted price):
 |           5165 Calle Sandwaves UNIT 2 San Diego CA 92154          | $565,000   | $2,423,735.05 | +$1,858,735.05  |
 
 
-Ten worst deals (model under-predicted price):
+Ten worst deals based on model (model under-predicted price):
 
 |  Address     | Actual Price    | Predicted Price |  Difference (Predicted - Actual) | 
 | ----------- | ----------- | ----------- | ----------- |
