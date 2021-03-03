@@ -102,3 +102,5 @@ Ten worst deals based on model (model under-predicted price):
 
 
 Looking at these top best and worst deals, it appears that home location may play a big role in the price of the home; the homes that are the worst deals are almost all located in the La Jolla neighborhood of San Diego, which is known for seaside living and ocean views. 
+
+**Code:** [project1.py](project1.py)
