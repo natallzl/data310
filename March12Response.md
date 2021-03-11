@@ -43,7 +43,7 @@ edu <- hhs %>%
                values_drop_na = TRUE)
 ```
 
-Following pivoting and droping NA values, number of observations (specifically gender) was not equal, so utlized code (below) to merge columns.
+Following pivoting and dropping NA, number of observations (specifically gender) was not equal, so utlized code (below) to merge columns.
 ```
 gender$id <- paste(gender$hhid, substr(gender$pid, 7,8), sep = '')
 age$id <- paste(age$hhid, substr(age$pid, 7,8), sep = '')
