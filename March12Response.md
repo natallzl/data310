@@ -8,7 +8,7 @@
 
 - weights
 
-- location
+- location (here, Province)
 
 - size
 
