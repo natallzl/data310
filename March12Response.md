@@ -1,4 +1,4 @@
-### Data wrangling and analysis
+### DHS Data Wrangling and Analysis
 
 I requested DHS data for Zambia.
 
