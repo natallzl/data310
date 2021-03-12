@@ -1,6 +1,6 @@
 ### DHS Data Wrangling and Analysis
 
-I requested DHS data for Zambia.
+I requested DHS data for Zambia (2018, DHS-VII).
 
 **Import the households dataset for your selected country and create a data frame with a variable that describes each of the following: household ID, unit, weights, location** (in this case, Province)**, size, gender, age, education, and wealth.**
 
