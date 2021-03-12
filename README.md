@@ -9,7 +9,6 @@
 - [Feb. 8 Response](https://natallzl.github.io/data310/Feb8Response.html)
 - [Feb. 21 Response](https://natallzl.github.io/data310/Feb21Response.html)
 - [Feb. 26 Response](https://natallzl.github.io/data310/Feb26Response.html)
-- [March 12 Response](https://natallzl.github.io/data310/March12Response.html)
 
 ### Projects
 1. [Mini-project (Feb. 14)](https://natallzl.github.io/data310/miniProject1.html)
