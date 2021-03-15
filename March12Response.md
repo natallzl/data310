@@ -48,8 +48,8 @@ Following pivoting and dropping NA, number of observations (specifically gender)
 gender$id <- paste(gender$hhid, substr(gender$pid, 7,8), sep = '')
 age$id <- paste(age$hhid, substr(age$pid, 7,8), sep = '')
 edu$id <- paste(edu$hhid, substr(edu$pid, 7,8), sep = '')
-pns <- merge(gender, age, by = 'id')
-pns <- merge(pns, edu, by = 'id')
+
+pns <- inner_join(gender, age, by = "id") %>% inner_join(., edu, by = "id")
 ```
 
 Now, ```sum(pns$weights)``` gives us 40560.92, and ```nrow(pns)``` gives us 40777. 
