@@ -64,7 +64,7 @@ Raw:
 
 <img src="zambia_raw.png" alt="drawing" width="300"/>
 
-Standardized:
+Standardized (scaled):
 
 <img src="zambia_scale.png" alt="drawing" width="300"/>
 
