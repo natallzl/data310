@@ -62,16 +62,16 @@ First few rows of pns dataframe:
 
 Raw:
 
-<img src="zambia_raw.png" alt="drawing" width="300"/>
+<img src="zambia_raw.png" alt="drawing" width="400"/>
 
 Standardized (scaled):
 
-<img src="zambia_scale.png" alt="drawing" width="300"/>
+<img src="zambia_scale.png" alt="drawing" width="400"/>
 
 Normalized:
 
-<img src="zambia_normal.png" alt="drawing" width="300"/>
+<img src="zambia_normal.png" alt="drawing" width="400"/>
 
 Percentized:
 
-<img src="zambia_percent.png" alt="drawing" width="300"/>
+<img src="zambia_percent.png" alt="drawing" width="400"/>
