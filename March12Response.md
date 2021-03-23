@@ -2,7 +2,9 @@
 
 I requested DHS data for Zambia (2018, DHS-VII).
 
-**Import the households dataset for your selected country and create a data frame with a variable that describes each of the following: household ID, unit, weights, location** (in this case, Province)**, size, gender, age, education, and wealth.**
+**Import the households dataset for your selected country and create a data frame with a variable that describes each of the following: household ID, unit, weights, location, size, gender, age, education, and wealth.**
+
+In this case, after looking at the .MAP and .DO files, province was the best option to describe location.
 
 ```
 households <- read_dta("ZM_2018_DHS/ZMHR71DT/ZMHR71FL.DTA")
