@@ -62,7 +62,7 @@ Similar to the penalized logistic regression, the random forest model is most ef
 
 <img src="last_rf_fit.png" alt="drawing" width="500"/>
 
-It appears that age is the most important feature in terms of contribution to predictive power, and gender is the least important. 
+It appears that age is the most important feature in terms of contribution to predictive power, and gender is the least important. I would have guessed that perhaps education level would be of more importance, so that was a somewhat surprising outcome. It would be interesting to look at other features of the data.  
 
 ### Model 3 - Logistic Regression Model
 
@@ -157,4 +157,4 @@ According to the evaluation metrics, the gradient boosting model produced the be
 
 **Were there any discrepancies among the five wealth outcomes from your DHS survey dataset?**
 
-
+The four models performed similarly - they performed better when predicting the "extremes" of the wealth category, wealths 1 and 5. Model performance was not as good for the middle wealth outcomes. 
