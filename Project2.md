@@ -147,8 +147,14 @@ Wealth 5:
 
 <img src="boost_wealth5.png" alt="drawing" width="700"/>
 
+The ROC curves for the gradient boosting model are again pretty similar to those of previous models; the model performs better and has a larger AUC for wealth 1 and 5. The model is not as effective at differentiating wealths 2, 3, and 4 from the others. Compared to the logistic regression model, we can look at the evaluative metrics and see that the gradient boosting model overall appears to have slightly improved accuracy and also outputs a slightly larger AUC for all wealths - particularly for wealths 2 and 4. 
+
 ### Analyze all four models
 
 **According to the evaluation metrics, which model produced the best results?**
 
+According to the evaluation metrics, the gradient boosting model produced the best results. It had a higher accuracy across the wealth groups, and also had the larger AUC for the wealth groups. 
+
 **Were there any discrepancies among the five wealth outcomes from your DHS survey dataset?**
+
+
