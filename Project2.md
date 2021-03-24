@@ -28,11 +28,7 @@ Below are the results of the "top_models":
 
 Based on this output, model 10 had the largest AUC (0.609) and thus performed the best. 
 
-**Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?**
-
-ANSWER HERE
-
-**Provide justification for your selected penalty value.**
+**Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors? Provide justification for your selected penalty value.**
 
 <img src="lr_plot.png" alt="drawing" width="400"/>
 
@@ -48,17 +44,25 @@ I used a penalty of 0.000853, or slice 10, for the ROC plots. To determine how e
 
 **Using the R script provided, set up your random forest model and produce the AUC - ROC values for the randomly selected predictors, and the minimal node size, again with wealth as the target.**
 
+<img src="rf_res.png" alt="drawing" width="600"/>
 
 **How did your random forest model fare when compared to the penalized logistic regression?**
 
+<img src="rf_lr_auc.png" alt="drawing" width="500"/>
+
+The random forest model is fairly comparable to the penalized logistic regression. It appears to perform a little better than the penalized logistic regression in some wealth outcomes, but overall the models performed similarly.  
 
 **Provide your ROC plots and interpret them.**
 
+<img src="rf_auc.png" alt="drawing" width="600"/>
 
+Similar to the penalized logistic regression, the random forest model is most effective at predicting wealth outcomes 1 and 5, and less effective at differentiating 2, 3, and 4 from the others. The model overall appears to not perform as well when differentiating between 2, 3, and 4, or the middle wealth outcomes. There does appear to perhaps be a small improvement in predicting the middle wealth outcomes versus the penalized logistic regression, but overall the models perform similarly. 
 
 **Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?**
 
+<img src="last_rf_fit.png" alt="drawing" width="500"/>
 
+It appears that age is the most important feature in terms of contribution to predictive power, and gender is the least important. 
 
 ### Model 3
 
