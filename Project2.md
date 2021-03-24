@@ -70,17 +70,17 @@ It appears that age is the most important feature in terms of contribution to pr
 
 | Evaluative Metric      | Result (wealth 1)    | Result (wealth 2)    | Result (wealth 3)    | Result (wealth 4)    | Result (wealth 5)    |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | 
-| accuracy               |  0   | 0.777342   | 0.780971  | 0.832271   |  0.823345   |
-| accuracy_baseline      |  0  | 0.777342   | 0.780971   | 0.832271   | 0.823737  |
-| auc                    |  0 | 0.686192  | 0.646600   | 0.649065  | 0.719188    |
-| auc_precision_recall   |  0  | 0.313106   | 0.278746   | 0.235587   | 0.332359   |
-| average_loss           |  0  | 0.476321   | 0.478807  | 0.421690   | 0.411229  |
-| label/mean             |  0  | 0.222658   | 0.219029   | 0.167729  | 0.176263   | 
-| loss                   |  0 | 0.476321   | 0.478807   | 0.421690 | 0.411229  | 
-| precision              |   0  | 0.000000  | 0.000000   | 0.000000   | 0.388889   | 
-| prediction/mean        |  0  | 0.232126   | 0.223921   | 0.175702  | 0.185450 |
-| recall                 |  0  | 0.000000   | 0.000000   | 0.000000  | 0.003895 |
-| global_step            |  0  | 100.000000   | 100.000000   | 100.000000   | 100.000000  |
+| accuracy               |  0.776949   | 0.781069  | 0.784110  | 0.827759   |  0.819225  |
+| accuracy_baseline      |  0.776949  | 0.781069   | 0.784110   | 0.827759   | 0.819225  |
+| auc                    |  0.631950 | 0.535903  | 0.536906   | 0.564764  | 0.649596    |
+| auc_precision_recall   |  0.295410  | 0.232036   | 0.236950   | 0.210365   | 0.309374   |
+| average_loss           |  0.510198  | 0.522409  | 0.520388  | 0.456083   | 0.443171  |
+| label/mean             |  0.223051  | 0.218931   | 0.215890   | 0.172241  | 0.180775   | 
+| loss                   |  0.510198 | 0.522409   | 0.520388  | 0.456083 | 0.443171  | 
+| precision              |   0.000000  | 0.000000 | 0.000000   | 0.000000   | 0.000000   | 
+| prediction/mean        |  0.223939  | 0.225920   | 0.219684   | 0.169870  | 0.180851 |
+| recall                 |  0.000000  | 0.000000   | 0.000000   | 0.000000  | 0.000000 |
+| global_step            |  100.000000  | 100.000000  | 100.000000   | 100.000000   | 100.000000  |
 
 **Then continue with your linear classifier adding the derived feature columns you have selected in order to extend capturing combinations of correlations (instead of learning on single model weights for each outcome). Again produce your ROC curves and interpret the results.**
 
@@ -111,17 +111,17 @@ Wealth 5:
 
 | Evaluative Metric      | Result (wealth 1)    | Result (wealth 2)    | Result (wealth 3)    | Result (wealth 4)    | Result (wealth 5)    |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | 
-| accuracy               |  0   | 0.777538   | 0.780383  | 0.833448   | 0.832369   |
-| accuracy_baseline      |  0  | 0.777342   | 0.780971   | 0.832271   | 0.823737  |
-| auc                    |  0 | 0.731486  | 0.685921   | 0.681143  | 0.751930    |
-| auc_precision_recall   |  0  | 0.380212   | 0.321306   | 0.266240   | 0.405463   |
-| average_loss           |  0  | 0.448817   | 0.457983  | 0.401714   | 0.387140  |
-| label/mean             |  0  | 0.222658   | 0.219029   | 0.167729  | 0.176263   | 
-| loss                   |  0 | 0.448817   | 0.457983   | 0.401714 | 0.387140  | 
-| precision              |   0  | 0.527778  | 0.400000   | 0.875000   | 0.814286   | 
-| prediction/mean        |  0  | 0.222825   | 0.213938   | 0.167415  | 0.178771 |
-| recall                 |  0  | 0.008370   | 0.005374   | 0.008187  | 0.063439 |
-| global_step            |  0  | 100.000000   | 100.000000   | 100.000000   | 100.000000  |
+| accuracy               |  0.777440   | 0.780284   | 0.784306  | 0.828543   | 0.826974   |
+| accuracy_baseline      |  0.776949  | 0.785875   | 0.784110   | 0.827759   | 0.819225  |
+| auc                    |  0.654496 | 0.659469  | 0.549197   | 0.607277  | 0.689823    |
+| auc_precision_recall   |  0.326235  | 0.319574   | 0.251778   | 0.249540   | 0.378418  |
+| average_loss           |  0.500891  | 0.487646   | 0.516750  | 0.448407   | 0.430754  |
+| label/mean             |  0.223051  | 0.214125   | 0.215890   | 0.172241  | 0.180775   | 
+| loss                   |  0.500891 | 0.487646   | 0.516750   | 0.448407 | 0.430754  | 
+| precision              |   0.575758  | 0.571429  | 0.545455   | 0.681818   | 0.739394   | 
+| prediction/mean        |  0.219308  | 0.219959   | 0.215268   | 0.164324  | 0.177925 |
+| recall                 |  0.008355  | 0.003665   | 0.005452   | 0.008542  | 0.066196 |
+| global_step            |  100.000000  | 100.000000   | 100.000000   | 100.000000   | 100.000000  |
 
 **Produce the predicted probabilities plot as well as the ROC curve for each wealth outcome and interpret these results.**
 
