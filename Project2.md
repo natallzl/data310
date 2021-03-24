@@ -28,6 +28,8 @@ Below are the results of the "top_models":
 15 0.00281  roc_auc hand_till  0.603     1      NA Preprocessor1_Model15
 ```
 
+Based on this output, model 10 had the largest AUC (0.609) and thus performed the best. 
+
 **Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?**
 
 
@@ -36,7 +38,7 @@ Below are the results of the "top_models":
 
 <img src="lr_plot.png" alt="drawing" width="400"/>
 
-Based on the penalty vs AUC plot above, AUC appears to begin to decrease after about model 10. Looking at the “top_models” output, model 10 has the largest mean AUC of 0.609, with a penalty of 0.000853. However, the mean AUCs for models 1-13 are not very different. So, based on these outputs, I also utilized the slicing method with models 1-13 to determine the best model. Models 1-13 all produced similar results, so I went ahead and chose model 10 based on the penalty vs AUC plot and “top_models” output.
+My selected penalty value is 0.000853. Looking at the “top_models” output, model 10 has the largest mean AUC, 0.609, with a penalty of 0.000853. Additionally, based on the penalty vs AUC plot above, AUC appears to begin to decrease after about model 10. 
 
 **Finally, provide your ROC plots and interpret them. How effective is your penalized logistic regression model at predicting each of the five wealth outcomes?**
 
