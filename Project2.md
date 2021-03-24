@@ -82,9 +82,28 @@ It appears that age is the most important feature in terms of contribution to pr
 | recall                 |  0  | 0.000000   | 0.000000   | 0.000000  | 0.003895 |
 | global_step            |  0  | 100.000000   | 100.000000   | 100.000000   | 100.000000  |
 
-
-
 **Then continue with your linear classifier adding the derived feature columns you have selected in order to extend capturing combinations of correlations (instead of learning on single model weights for each outcome). Again produce your ROC curves and interpret the results.**
+
+Wealth 1:
+
+<img src="log_roc_wealth1.png" alt="drawing" width="500"/>
+
+
+Wealth 2:
+
+<img src="log_roc_wealth2.png" alt="drawing" width="500"/>
+
+Wealth 3:
+
+<img src="log_roc_wealth3.png" alt="drawing" width="500"/>
+
+Wealth 4:
+
+<img src="log_roc_wealth4.png" alt="drawing" width="500"/>
+
+Wealth 5:
+
+<img src="log_roc_wealth5.png" alt="drawing" width="500"/>
 
 ### Model 4
 
