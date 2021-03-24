@@ -125,6 +125,22 @@ Wealth 5:
 
 **Produce the predicted probabilities plot as well as the ROC curve for each wealth outcome and interpret these results.**
 
+Wealth 2:
+
+<img src="boosted_wealth2.png" alt="drawing" width="700"/>
+
+Wealth 3:
+
+<img src="boosted_wealth3.png" alt="drawing" width="700"/>
+
+Wealth 4:
+
+<img src="boosted_wealth4.png" alt="drawing" width="700"/>
+
+Wealth 5:
+
+<img src="boosted_wealth5.png" alt="drawing" width="700"/>
+
 ### Analyze all four models
 
 **According to the evaluation metrics, which model produced the best results?**
