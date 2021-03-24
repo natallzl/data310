@@ -70,17 +70,19 @@ It appears that age is the most important feature in terms of contribution to pr
 
 | Evaluative Metric      | Result (wealth 1)    | Result (wealth 2)    | Result (wealth 3)    | Result (wealth 4)    | Result (wealth 5)    |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | 
-| accuracy    |  0   | 0   | 0  | 0   | 0.821383   |
-| accuracy_baseline      |  0  | 0   | 0   | 0   | 0.821775  |
-| auc     |  0 | 0  | 0   | 0  | 0.725895    |
-| auc_precision_recall      |  0  | 0   | 0   | 0   | 0.340106   |
-| average_loss      |  0  | 0   | 0  | 0   | 0.411894   |
-| label/mean     |  0  | 0   | 0   | 0  | 0.178225   | 
-| loss      |  0  | 0   | 0   | 0 | 0.411894  | 
-| precision     |   0  | 0  | 0   | 0   | 0.250000   | 
-| prediction/mean     |  0  | 0   | 0   | 0  | 0.184599  |
-| recall         |  0  | 0   | 0   | 0  | 0.001101 |
-| global_step    |  0  | 0   | 0   | 0   | 100.000000   |
+| accuracy               |  0   | 0.777342   | 0.780971  | 0.832271   |  0.823345   |
+| accuracy_baseline      |  0  | 0.777342   | 0.780971   | 0.832271   | 0.823737  |
+| auc                    |  0 | 0.686192  | 0.646600   | 0.649065  | 0.719188    |
+| auc_precision_recall   |  0  | 0.313106   | 0.278746   | 0.235587   | 0.332359   |
+| average_loss           |  0  | 0.476321   | 0.478807  | 0.421690   | 0.411229  |
+| label/mean             |  0  | 0.222658   | 0.219029   | 0.167729  | 0.176263   | 
+| loss                   |  0 | 0.476321   | 0.478807   | 0.421690 | 0.411229  | 
+| precision              |   0  | 0.000000  | 0.000000   | 0.000000   | 0.388889   | 
+| prediction/mean        |  0  | 0.232126   | 0.223921   | 0.175702  | 0.185450 |
+| recall                 |  0  | 0.000000   | 0.000000   | 0.000000  | 0.003895 |
+| global_step            |  0  | 100.000000   | 100.000000   | 100.000000   | 100.000000  |
+
+
 
 **Then continue with your linear classifier adding the derived feature columns you have selected in order to extend capturing combinations of correlations (instead of learning on single model weights for each outcome). Again produce your ROC curves and interpret the results.**
 
@@ -88,17 +90,19 @@ It appears that age is the most important feature in terms of contribution to pr
 
 **Using the python script provided, train a gradient boosting model using decision trees with the tensorflow estimator. Provide evaluative metrics including a measure of accuracy and AUC.** 
 
-accuracy                  0.830505
-accuracy_baseline         0.821775
-auc                       0.752580
-auc_precision_recall      0.411378
-average_loss              0.389459
-label/mean                0.178225
-loss                      0.389459
-precision                 0.790850
-prediction/mean           0.178561
-recall                    0.066593
-global_step             100.000000
+| Evaluative Metric      | Result (wealth 1)    | Result (wealth 2)    | Result (wealth 3)    | Result (wealth 4)    | Result (wealth 5)    |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | 
+| accuracy               |  0   | 0.777538   | 0.780383  | 0.833448   | 0.832369   |
+| accuracy_baseline      |  0  | 0.777342   | 0.780971   | 0.832271   | 0.823737  |
+| auc                    |  0 | 0.731486  | 0.685921   | 0.681143  | 0.751930    |
+| auc_precision_recall   |  0  | 0.380212   | 0.321306   | 0.266240   | 0.405463   |
+| average_loss           |  0  | 0.448817   | 0.457983  | 0.401714   | 0.387140  |
+| label/mean             |  0  | 0.222658   | 0.219029   | 0.167729  | 0.176263   | 
+| loss                   |  0 | 0.448817   | 0.457983   | 0.401714 | 0.387140  | 
+| precision              |   0  | 0.527778  | 0.400000   | 0.875000   | 0.814286   | 
+| prediction/mean        |  0  | 0.222825   | 0.213938   | 0.167415  | 0.178771 |
+| recall                 |  0  | 0.008370   | 0.005374   | 0.008187  | 0.063439 |
+| global_step            |  0  | 100.000000   | 100.000000   | 100.000000   | 100.000000  |
 
 **Produce the predicted probabilities plot as well as the ROC curve for each wealth outcome and interpret these results.**
 
