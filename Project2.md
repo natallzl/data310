@@ -1,5 +1,7 @@
 ## Project 2 - Zambia DHS Data Analysis and Modeling
 
+I requested and obtained DHS data for Zambia (2018, DHS-VII).
+
 ### Model 1 - Penalized Logistic Regression
 
 **Using the R script provided, split and sample your DHS persons data and evaluate the AUC - ROC values you produce. Which "top_model" performed the best (had the largest AUC)?** 
