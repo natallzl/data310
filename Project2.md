@@ -30,7 +30,7 @@ Based on this output, model 10 had the largest AUC (0.609) and thus performed th
 
 **Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?**
 
-
+ANSWER HERE
 
 **Provide justification for your selected penalty value.**
 
@@ -41,6 +41,8 @@ My selected penalty value is 0.000853. Looking at the “top_models” output, m
 **Finally, provide your ROC plots and interpret them. How effective is your penalized logistic regression model at predicting each of the five wealth outcomes?**
 
 <img src="lr_roc.png" alt="drawing" width="600"/>
+
+I used a penalty of 0.000853, or slice 10, for the ROC plots. To determine how effective the model is, we can look at how close the plot is to the 45 degree line; the closer to the straight line the worse the model is at predicting the wealth outcome versus the others. The penalized logistic regression is most effective at predicting wealth outcomes 1 and 5, and less effective at differentiating 2, 3, and 4 from the others. The model performed best when predicting wealth group 5, then 1. It seems to perform okay, but not well when predicting groups 2 and 4, but overall appears to not perform very well when differentiating between 2, 3, and 4, or the middle wealth outcomes. 
 
 ### Model 2
 
