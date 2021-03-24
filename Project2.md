@@ -151,7 +151,7 @@ The ROC curves for the gradient boosting model are again pretty similar to those
 
 Looking at the predicted probabilities plots, these outcomes make sense because there is a larger number of people in wealth outcomes 1-3 than 4 and 5, so the predictive probabilities would be higher for those wealth outcomes. 
 
-<img src="all_wealths.png" alt="drawing" width="500"/>
+<img src="all_wealths.png" alt="drawing" width="400"/>
 
 
 ### Analyze all four models
