@@ -46,13 +46,17 @@ I used a penalty of 0.000853, or slice 10, for the ROC plots. To determine how e
 
 ### Model 2
 
-**Using the R script provided, set up your random forest model and produce the AUC - ROC values for the randomly selected predictors, and the minimal node size, again with wealth as the target.**
+**Using the R script provided, set up your random forest model and produce the AUC - ROC values for the randomly selected predictors, and the minimal node size, again with wealth as the target. How did your random forest model fare when compared to the penalized logistic regression?**
 
-**How did your random forest model fare when compared to the penalized logistic regression?**
+
 
 **Provide your ROC plots and interpret them.**
 
+
+
 **Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?**
+
+
 
 ### Model 3
 
