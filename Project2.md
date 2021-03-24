@@ -11,28 +11,36 @@ Below are the results of the "top_models":
 ```
     penalty .metric .estimator  mean     n std_err .config              
       <dbl> <chr>   <chr>      <dbl> <int>   <dbl> <chr>                
- 1 0.0001   roc_auc hand_till  0.607     1      NA Preprocessor1_Model01
- 2 0.000127 roc_auc hand_till  0.607     1      NA Preprocessor1_Model02
- 3 0.000161 roc_auc hand_till  0.607     1      NA Preprocessor1_Model03
- 4 0.000204 roc_auc hand_till  0.607     1      NA Preprocessor1_Model04
- 5 0.000259 roc_auc hand_till  0.607     1      NA Preprocessor1_Model05
- 6 0.000329 roc_auc hand_till  0.607     1      NA Preprocessor1_Model06
- 7 0.000418 roc_auc hand_till  0.607     1      NA Preprocessor1_Model07
- 8 0.000530 roc_auc hand_till  0.607     1      NA Preprocessor1_Model08
- 9 0.000672 roc_auc hand_till  0.606     1      NA Preprocessor1_Model09
-10 0.000853 roc_auc hand_till  0.606     1      NA Preprocessor1_Model10
-11 0.00108  roc_auc hand_till  0.606     1      NA Preprocessor1_Model11
-12 0.00137  roc_auc hand_till  0.605     1      NA Preprocessor1_Model12
-13 0.00174  roc_auc hand_till  0.604     1      NA Preprocessor1_Model13
-14 0.00221  roc_auc hand_till  0.603     1      NA Preprocessor1_Model14
-15 0.00281  roc_auc hand_till  0.601     1      NA Preprocessor1_Model15
+ 1 0.0001   roc_auc hand_till  0.608     1      NA Preprocessor1_Model01
+ 2 0.000127 roc_auc hand_till  0.608     1      NA Preprocessor1_Model02
+ 3 0.000161 roc_auc hand_till  0.608     1      NA Preprocessor1_Model03
+ 4 0.000204 roc_auc hand_till  0.608     1      NA Preprocessor1_Model04
+ 5 0.000259 roc_auc hand_till  0.608     1      NA Preprocessor1_Model05
+ 6 0.000329 roc_auc hand_till  0.608     1      NA Preprocessor1_Model06
+ 7 0.000418 roc_auc hand_till  0.608     1      NA Preprocessor1_Model07
+ 8 0.000530 roc_auc hand_till  0.608     1      NA Preprocessor1_Model08
+ 9 0.000672 roc_auc hand_till  0.608     1      NA Preprocessor1_Model09
+10 0.000853 roc_auc hand_till  0.609     1      NA Preprocessor1_Model10
+11 0.00108  roc_auc hand_till  0.608     1      NA Preprocessor1_Model11
+12 0.00137  roc_auc hand_till  0.608     1      NA Preprocessor1_Model12
+13 0.00174  roc_auc hand_till  0.607     1      NA Preprocessor1_Model13
+14 0.00221  roc_auc hand_till  0.606     1      NA Preprocessor1_Model14
+15 0.00281  roc_auc hand_till  0.603     1      NA Preprocessor1_Model15
 ```
 
 **Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?**
 
+
+
 **Provide justification for your selected penalty value.**
 
+<img src="lr_plot.png" alt="drawing" width="400"/>
+
+Based on the penalty vs AUC plot above, AUC appears to begin to decrease after about model 10. Looking at the “top_models” output, model 10 has the largest mean AUC of 0.609, with a penalty of 0.000853. However, the mean AUCs for models 1-13 are not very different. So, based on these outputs, I also utilized the slicing method with models 1-13 to determine the best model. Models 1-13 all produced similar results, so I went ahead and chose model 10 based on the penalty vs AUC plot and “top_models” output.
+
 **Finally, provide your ROC plots and interpret them. How effective is your penalized logistic regression model at predicting each of the five wealth outcomes?**
+
+<img src="lr_roc.png" alt="drawing" width="600"/>
 
 #### Model 2
 
