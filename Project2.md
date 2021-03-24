@@ -68,12 +68,39 @@ It appears that age is the most important feature in terms of contribution to pr
 
 **Using the python script provided, train a logistic regression model using the tensorflow estimator API and your DHS data, again with wealth as the target. Apply the linear classifier to the feature columns and determine the accuracy, AUC and other evaluative metrics towards each of the different wealth outcomes.**
 
+| Evaluative Metric      | Result (wealth 1)    | Result (wealth 2)    | Result (wealth 3)    | Result (wealth 4)    | Result (wealth 5)    |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | 
+| accuracy    |  0   | 0   | 0  | 0   | 0.821383   |
+| accuracy_baseline      |  0  | 0   | 0   | 0   | 0.821775  |
+| auc     |  0 | 0  | 0   | 0  | 0.725895    |
+| auc_precision_recall      |  0  | 0   | 0   | 0   | 0.340106   |
+| average_loss      |  0  | 0   | 0  | 0   | 0.411894   |
+| label/mean     |  0  | 0   | 0   | 0  | 0.178225   | 
+| loss      |  0  | 0   | 0   | 0 | 0.411894  | 
+| precision     |   0  | 0  | 0   | 0   | 0.250000   | 
+| prediction/mean     |  0  | 0   | 0   | 0  | 0.184599  |
+| recall         |  0  | 0   | 0   | 0  | 0.001101 |
+| global_step    |  0  | 0   | 0   | 0   | 100.000000   |
+
 **Then continue with your linear classifier adding the derived feature columns you have selected in order to extend capturing combinations of correlations (instead of learning on single model weights for each outcome). Again produce your ROC curves and interpret the results.**
 
 ### Model 4
 
-**Using the python script provided, train a gradient boosting model using decision trees with the tensorflow estimator. Provide evaluative metrics including a measure of accuracy and AUC. Produce the predicted probabilities plot as well as the ROC curve for each wealth outcome and interpret these results.**
+**Using the python script provided, train a gradient boosting model using decision trees with the tensorflow estimator. Provide evaluative metrics including a measure of accuracy and AUC.** 
 
+accuracy                  0.830505
+accuracy_baseline         0.821775
+auc                       0.752580
+auc_precision_recall      0.411378
+average_loss              0.389459
+label/mean                0.178225
+loss                      0.389459
+precision                 0.790850
+prediction/mean           0.178561
+recall                    0.066593
+global_step             100.000000
+
+**Produce the predicted probabilities plot as well as the ROC curve for each wealth outcome and interpret these results.**
 
 ### Analyze all four models
 
