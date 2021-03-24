@@ -86,24 +86,24 @@ It appears that age is the most important feature in terms of contribution to pr
 
 Wealth 1:
 
-<img src="log_roc_wealth1.png" alt="drawing" width="500"/>
+<img src="log_roc_wealth1.png" alt="drawing" width="450"/>
 
 
 Wealth 2:
 
-<img src="log_roc_wealth2.png" alt="drawing" width="500"/>
+<img src="log_roc_wealth2.png" alt="drawing" width="450"/>
 
 Wealth 3:
 
-<img src="log_roc_wealth3.png" alt="drawing" width="500"/>
+<img src="log_roc_wealth3.png" alt="drawing" width="450"/>
 
 Wealth 4:
 
-<img src="log_roc_wealth4.png" alt="drawing" width="500"/>
+<img src="log_roc_wealth4.png" alt="drawing" width="450"/>
 
 Wealth 5:
 
-<img src="log_roc_wealth5.png" alt="drawing" width="500"/>
+<img src="log_roc_wealth5.png" alt="drawing" width="450"/>
 
 The ROC curves for the logistic regression model are similar to those of the penalized logistic regression and random forest models; the model performs better and has a larger AUC for wealth 1 and 5. The model is not very effective at differentiating wealths 2, 3, and 4. Similar to the previous models, this model does perhaps predict wealth 4 a bit better than wealths 2 and 3.  
 
