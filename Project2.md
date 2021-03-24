@@ -1,6 +1,6 @@
 ## Project 2 - Zambia DHS Data Analysis and Modeling
 
-### Model 1 
+### Model 1 - Penalized Logistic Regression
 
 **Using the R script provided, split and sample your DHS persons data and evaluate the AUC - ROC values you produce. Which "top_model" performed the best (had the largest AUC)?** 
 
@@ -40,7 +40,7 @@ My selected penalty value is 0.000853. Looking at the “top_models” output, m
 
 I used a penalty of 0.000853, or slice 10, for the ROC plots. To determine how effective the model is, we can look at how close the plot is to the 45 degree line; the closer to the straight line the worse the model is at predicting the wealth outcome versus the others. The penalized logistic regression is most effective at predicting wealth outcomes 1 and 5, and less effective at differentiating 2, 3, and 4 from the others. The model performed best when predicting wealth group 5, then 1. It seems to perform okay, but not well when predicting groups 2 and 4, but overall appears to not perform very well when differentiating between 2, 3, and 4, or the middle wealth outcomes. 
 
-### Model 2
+### Model 2 - Random Forest Model
 
 **Using the R script provided, set up your random forest model and produce the AUC - ROC values for the randomly selected predictors, and the minimal node size, again with wealth as the target.**
 
@@ -64,7 +64,7 @@ Similar to the penalized logistic regression, the random forest model is most ef
 
 It appears that age is the most important feature in terms of contribution to predictive power, and gender is the least important. 
 
-### Model 3
+### Model 3 - Logistic Regression Model
 
 **Using the python script provided, train a logistic regression model using the tensorflow estimator API and your DHS data, again with wealth as the target. Apply the linear classifier to the feature columns and determine the accuracy, AUC and other evaluative metrics towards each of the different wealth outcomes.**
 
@@ -105,7 +105,7 @@ Wealth 5:
 
 <img src="log_roc_wealth5.png" alt="drawing" width="500"/>
 
-### Model 4
+### Model 4 - Gradient Boosting Model
 
 **Using the python script provided, train a gradient boosting model using decision trees with the tensorflow estimator. Provide evaluative metrics including a measure of accuracy and AUC.** 
 
