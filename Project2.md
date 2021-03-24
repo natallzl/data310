@@ -56,7 +56,7 @@ The random forest model is fairly comparable to the penalized logistic regressio
 
 <img src="rf_auc.png" alt="drawing" width="600"/>
 
-Similar to the penalized logistic regression, the random forest model is most effective at predicting wealth outcomes 1 and 5, and less effective at differentiating 2, 3, and 4 from the others. The model overall appears to not perform as well when differentiating between 2, 3, and 4, or the middle wealth outcomes. There does appear to perhaps be a small improvement in predicting the middle wealth outcomes versus the penalized logistic regression, but overall the models perform similarly. 
+Similar to the penalized logistic regression, the random forest model is most effective at predicting wealth outcomes 1 and 5, and less effective at differentiating 2, 3, and 4 from the others. The model overall appears to not perform as well when differentiating between 2, 3, and 4 and the others, or the middle wealth outcomes. There does appear to perhaps be a small improvement in predicting the middle wealth outcomes versus the penalized logistic regression, but overall the models perform similarly. 
 
 **Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?**
 
