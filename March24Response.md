@@ -10,7 +10,7 @@
 
 <img src="zmb_summary_stats.png" alt="drawing" width="900"/>
 
-(this shows only a sample of the stats)
+(this shows only a sample of the stats; 72 rows & 26 columns total)
 
 **R2 Plot and Variable Importance**
 
