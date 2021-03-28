@@ -8,3 +8,10 @@
 
 **Produce a raster stack and calculate summary statistics.**
 
+<img src="zmb_summary_stats.png" alt="drawing" width="900"/>
+
+R2 Plot and Variable Importance
+
+<img src="pop_linreg.png" alt="drawing" width="600"/>
+
+<img src="variable_importance.png" alt="drawing" width="600"/>
