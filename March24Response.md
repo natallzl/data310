@@ -10,7 +10,7 @@
 
 <img src="zmb_summary_stats.png" alt="drawing" width="900"/>
 
-(more stats not shown here)
+(this shows only a sample of the stats)
 
 **R2 Plot and Variable Importance**
 
