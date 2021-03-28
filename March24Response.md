@@ -10,6 +10,8 @@
 
 <img src="zmb_summary_stats.png" alt="drawing" width="900"/>
 
+(more stats not shown here)
+
 **R2 Plot and Variable Importance**
 
 <img src="pop_linreg.png" alt="drawing" width="600"/>
