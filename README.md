@@ -16,4 +16,4 @@
 1. [Mini-project (Feb. 14)](https://natallzl.github.io/data310/miniProject1.html)
 2. [Project 1 (March 3)](https://natallzl.github.io/data310/Project1.html)
 3. [Project 2 (March 24)](https://natallzl.github.io/data310/Project2.html)
-4. [Project 3 (April 16)]()
+4. Project 3 (April 16)
