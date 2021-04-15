@@ -145,7 +145,7 @@ First, we can take another look at the plots of predicted values from both model
 
 Comparing these plots to the map of Zambia shown at the beginning of this project (and shown below), 
 
-<img src="zambia_map.jpg" alt="drawing" width="300"/>
+<img src="zambia_map.jpg" alt="drawing" width="400"/>
 
 Generally, both models tended to over-predict population. One of the most interesting variations to note is where population is over-predicted versus where it is under-predicted. 
 
