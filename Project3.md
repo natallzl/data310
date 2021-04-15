@@ -76,4 +76,8 @@ zmb_adm2 <- zmb_adm2 %>%
 MSE(y_pred = zmb_adm2$rf_pop_sum, y_true = zmb_adm2$pop19)
 ```
 
-## Conclusions
+## Analysis and Conclusions
+
+### Which model was more accurate?
+
+### Account for spatial variation throughout Zambia; why did these variations occur?
