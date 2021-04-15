@@ -112,7 +112,9 @@ We can compare some stats:
 
 Comparison of zoomed in differences (Lusaka area):
 
-<img src="zambia_lr_lusaka.png" alt="drawing" width="400"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="400"/>
+<img src="zambia_lr_lusaka.png" alt="drawing" width="450"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="450"/>
+
+Linear Regression model                    Random Forest model
 
 
 ### Account for spatial variation throughout Zambia; why did these variations occur?
