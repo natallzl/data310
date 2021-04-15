@@ -129,7 +129,7 @@ Based on the model outputs and model validation and analysis, the linear regress
 
 Additionally, the sum of all differences (sum of all differences of the absolute value of predicted population - actual population for each cell) is slightly smaller for the linear regression model (15,259,622) than the random forest model (15,266,109). This again suggests that the linear regression model was more accurate because overall, the predicted values are closer to the actual values. 
 
-Looking at predicted population total, the result of the random forest model (17,965,958) is closer to the actual population total than the result of the linear regression result; however, the difference between the two predicted values is only 4 people. These results make sense, as both models tended to overpredict population counts. 
+Looking at predicted population total, the result of the random forest model (17,965,958) is closer to the actual population total (17,964,587) than the result of the linear regression result (17,965,962); however, the difference between the two predicted values is only 4 people. These results make sense, as both models tended to overpredict population counts. 
 
 After considering all of the results, I still conclude that the linear regression model was more accurate, though model performance was very, very similar.
 
