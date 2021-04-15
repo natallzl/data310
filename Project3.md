@@ -15,7 +15,7 @@ We can calculate the sum of all differences using ```cellStats(abs(diff_sums), s
 
 Then, we can also compare the predicted population total to the actual population total. The predicted total, ```cellStats(population_sums, sum)```, equaled 17,965,962. And the actual population total, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
 
-Then, we can take a closer look at an area of interest. I decided to look closer at the Lusaka area. Lusaka is the capital of Zambia, and as can be seen in the plots above, it appears to be the most populated area and it appears that the population there was under-predicted (versus the majority of the country where the population was over-predicted). To do this, I filtered the data by two provinces that surround the districts of interest, the Lusaka and Central districts. 
+Then, we can take a closer look at an area of interest. I decided to look closer at the Lusaka area. Lusaka is the capital of Zambia, and as can be seen in the plots above, it appears to be the most populated area and it appears that the population there was under-predicted (versus the majority of the country where the population was over-predicted). To do this, I filtered the data by the Lusaka province, and neighboring Chibombo district of the Central province.  
 
 Plot:
 
@@ -37,7 +37,7 @@ We can calculate the sum of all differences using ```cellStats(abs(diff_sums), s
 
 The predicted total, ```cellStats(population_sums, sum)```, equaled . And the actual population total, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
 
-Below is a plot of the Lusaka and Central districts:
+Below is a plot of the Lusaka province and neighboring Chibombo district:
 
 Finally, the MSE for the random forest model was . 
 
