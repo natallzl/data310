@@ -30,6 +30,8 @@ One way we can measure how the model performed is to look at the difference in p
 
 <img src="zambia_lr_diffpop.png" alt="drawing" width="800"/>
 
+It appears that the linear regression model over-predicted at most locations, and under-predicted around the capital city, Lusaka, as well as other more populated/densely populated areas like the central Northern area of Zambia.
+
 We can calculate the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,259,622.
 
 Then, we can also **compare the predicted population total to the actual population total**. The predicted total, ```cellStats(population_sums, sum)```, equaled 17,965,962. And the actual population total, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
@@ -85,6 +87,8 @@ After running the model, we can check that we have the correct number of summed 
 
 <img src="zambia_rf_diffpop.png" alt="drawing" width="800"/>
 
+It appears that the random forest model performed comparably to the linear regression model. It over-predicted at most locations, and under-predicted around the capital city, Lusaka, as well as other more populated/densely populated areas like the central Northern area of Zambia.
+
 We can calculate the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,266,109.
 
 The **predicted population total**, ```cellStats(population_sums, sum)```, equaled 17,965,958. And the **actual population total**, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
@@ -135,6 +139,9 @@ After considering all of the results, I still conclude that the linear regressio
 
 ### Account for spatial variation throughout Zambia; why did these variations occur?
 
+One of the most interesting variations to note is where population is over-predicted and where it is under-predicted.
+
+
 **Map Source:** [Britannica](https://www.britannica.com/place/Zambia)
 
-**Code:** []()
+**Code:** [Project3.R](https://github.com/natallzl/data310/blob/main/Project3.R)
