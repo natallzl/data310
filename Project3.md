@@ -14,7 +14,7 @@
 
 ## Linear Regression Model
 
-We can check that we have the correct number of gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00757.
+We can check that we have the correct number of summed gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00757.
 
 **Below is a plot of the predicted population:**
 
@@ -28,6 +28,8 @@ We can check that we have the correct number of gridcell proportions (predicted 
 
 One way we can measure how the model performed is to look at the difference in predicted versus actual population values. **Below is a plot of the difference (predicted - actual):**
 
+<img src="zambia_lr_diffpop.png" alt="drawing" width="800"/>
+
 We can calculate the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,259,622.
 
 Then, we can also **compare the predicted population total to the actual population total**. The predicted total, ```cellStats(population_sums, sum)```, equaled 17,965,962. And the actual population total, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
@@ -35,6 +37,8 @@ Then, we can also **compare the predicted population total to the actual populat
 Then, we can take a closer look at an area of interest. I decided to look closer at the Lusaka area. Lusaka is the capital of Zambia, and as can be seen in the plots above, it appears to be the most populated area and it appears that the population there was under-predicted (versus the majority of the country where the population was over-predicted). To do this, I filtered the data by the Lusaka province, and neighboring Chibombo district of the Central province.  
 
 **Plot:**
+
+<img src="zambia_lr_lusaka.png" alt="drawing" width="700"/>
 
 Finally, I calculated the **Mean Square Error (MSE)** for the predicted vs actual values. The MSE for the linear regression model was 405,319.6. 
 
@@ -53,21 +57,29 @@ MSE(y_pred = zmb_adm2$lr_pop_sum, y_true = zmb_adm2$pop19)
 
 ## Random Forest Model
 
-We can check that we have the correct number of gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00756.
+We can check that we have the correct number of summed gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00756.
 
 **Below is a plot of the predicted population:**
 
+<img src="zambia_rf_predpop.png" alt="drawing" width="800"/>
+
 **Below is a plot of the actual population:**
+
+<img src="zambia_rf_realpop.png" alt="drawing" width="800"/>
 
 ### Validation of the random forest model
 
 **Below is a plot of the difference (predicted - actual):**
 
+<img src="zambia_lr_diffpop.png" alt="drawing" width="800"/>
+
 We can calculate the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,266,109.
 
-The **predicted total**, ```cellStats(population_sums, sum)```, equaled 17,965,958. And the **actual population total**, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
+The **predicted population total**, ```cellStats(population_sums, sum)```, equaled 17,965,958. And the **actual population total**, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
 
 **Below is a plot of the Lusaka province and neighboring Chibombo district:**
+
+<img src="zambia_rf_lusaka.png" alt="drawing" width="700"/>
 
 Finally, the **MSE** for the random forest model was 405,822.1. 
 
@@ -87,6 +99,21 @@ MSE(y_pred = zmb_adm2$rf_pop_sum, y_true = zmb_adm2$pop19)
 ## Analysis and Conclusions
 
 ### Which model was more accurate?
+
+We can compare some stats:
+
+| Measure      | Linear Regression Result    |  Random Forest Result    | Actual (if applicable)    |
+| ----------- | ----------- | ----------- | ----------- |
+| summed gridcell proportions (number of districts)           |  72.00757   | 72.00756  | 72  |
+| sum of all differences          | 15,259,622     | 15,266,109     |   |
+| predicted population total     |  17,965,962  | 17,965,958   | 17,964,587   |
+| mean square error                   |  405,319.6 | 405,822.1  |   | 
+
+
+Comparison of zoomed in differences (Lusaka area):
+
+<img src="zambia_lr_lusaka.png" alt="drawing" width="400"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="400"/>
+
 
 ### Account for spatial variation throughout Zambia; why did these variations occur?
 
