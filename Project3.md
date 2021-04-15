@@ -118,7 +118,7 @@ MSE(y_pred = zmb_adm2$rf_pop_sum, y_true = zmb_adm2$pop19)
 
 Comparison of zoomed in differences (Lusaka area; Linear Regression model, Random Forest model):
 
-<img src="zambia_lr_lusaka.png" alt="drawing" width="400"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="400"/>
+<img src="zambia_lr_lusaka.png" alt="drawing" width="450"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="450"/>
 
 Even zoomed in, the maps of the difference (predicted - actual) are very, very similar - so let's compare some stats:
 
@@ -139,8 +139,15 @@ After considering all of the results, I still conclude that the linear regressio
 
 ### Account for spatial variation throughout Zambia; why did these variations occur?
 
-One of the most interesting variations to note is where population is over-predicted and where it is under-predicted.
+First, we can take another look at the plots of predicted values from both models. 
 
+<img src="zambia_lr_predpop.png" alt="drawing" width="450"/> <img src="zambia_rf_predpop.png" alt="drawing" width="450"/>
+
+Comparing these plots to the map of Zambia shown at the beginning of this project (and shown below), 
+
+<img src="zambia_map.jpg" alt="drawing" width="300"/>
+
+Generally, both models tended to over-predict population. One of the most interesting variations to note is where population is over-predicted versus where it is under-predicted. 
 
 **Map Source:** [Britannica](https://www.britannica.com/place/Zambia)
 
