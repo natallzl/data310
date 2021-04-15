@@ -147,11 +147,13 @@ Comparing these plots to the map of Zambia shown at the beginning of this projec
 
 <img src="zambia_map.jpg" alt="drawing" width="400"/>
 
-Generally, both models tended to over-predict population. One of the most interesting variations to note is where population is over-predicted versus where it is under-predicted. Population is over-predicted almost everywhere, except in what appears to be the most populated areas, like Lusaka. 
+Generally, both models tended to over-predict population. One of the most interesting spatial variations to note is where population is over-predicted versus where it is under-predicted. Population is over-predicted almost everywhere, except in what appears to be the most populated areas, like Lusaka. 
 
 <img src="zambia_lr_lusaka.png" alt="drawing" width="450"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="450"/>
 
+I think the reason for this difference in under/over-prediction can be attributed to population density which may not be captured by factors used in our model prediction like night time light and other factors. Typically, in cities, more people live closer together in less space. The dark purple areas on the above plots are where the population was most under-predicted, so I might make an educated guess that the population is the most dense in those areas. 
 
+It should also be noted that as you look outside of the most densly populous center (purple), the plot has some areas of yellow, which are areas that population is actually MORE over-predicted than the surrounding orange areas. One explanation I can think of for this, which was touched on in class on Wednesday (April 14), is that there are still a lot of buildings (and thus a lot of night time light) in these areas, but instead these areas have office buildings or factories. Basically, these areas are where there are a lot buildings (similar to densely populated area) but instead of living there, people perhaps work, eat and visit those areas. 
 
 **Map Source:** [Britannica](https://www.britannica.com/place/Zambia)
 
