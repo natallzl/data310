@@ -33,12 +33,12 @@ Below is a plot of the actual population:
 
 Below is a plot of the difference (predicted - actual):
 
-We can calculate the sum of all differences using ```cellStats(abs(diff_sums), sum)```, and we get 15259622.
+We can calculate the sum of all differences using ```cellStats(abs(diff_sums), sum)```, and we get .
 
 The predicted total, ```cellStats(population_sums, sum)```, equaled . And the actual population total, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
 
 Below is a plot of the Lusaka and Central districts:
 
-Finally, the MSE for the linear regression model was . 
+Finally, the MSE for the random forest model was . 
 
 ## Conclusions
