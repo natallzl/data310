@@ -143,7 +143,7 @@ First, we can take another look at the plots of predicted values from both model
 
 <img src="zambia_lr_predpop.png" alt="drawing" width="450"/> <img src="zambia_rf_predpop.png" alt="drawing" width="450"/>
 
-Comparing these plots to the map of Zambia shown at the beginning of this project (and shown below), 
+Comparing these plots to the map of Zambia shown at the beginning of this project (and shown below), the area with the highest predicted populations appears to coincide with the location of Lusaka, the capital city of Zambia. Additionally, other areas with higher population (in light red) appear to coincide with other established locations, such as Livingstone in southern Zambia, Petauke and Chipata in the east, and a number of other towns/cities in central northern Zambia (the Copperbelt Province; where there is a lot of copper mining). 
 
 <img src="zambia_map.jpg" alt="drawing" width="400"/>
 
