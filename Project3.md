@@ -1,3 +1,12 @@
+## Zambia Introduction
+
+Map of Zambia:
+
+Provinces:
+
+Districts:
+
+Total population (2019): 17,964,587
 
 ## Linear Regression Model
 
