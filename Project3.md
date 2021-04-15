@@ -23,6 +23,22 @@ Finally, I calculated the Mean Square Error (MSE) for the predicted vs actual va
 
 ## Random Forest Model
 
+We can check that we have the correct number of gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get .
+
+The predicted population total, ```cellStats(population_sums, sum)```, equaled . And the actual population total, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
+
+Below is a plot of the predicted population:
+
+Below is a plot of the actual population:
+
+Below is a plot of the difference (predicted - actual):
+
+We can calculate the sum of all differences using ```cellStats(abs(diff_sums), sum)```, and we get 15259622.
+
+Below is a plot of the Lusaka and Central districts:
+
+Finally, the MSE for the linear regression model was . 
+
 ### Validation of the random forest model
 
 ## Conclusions
