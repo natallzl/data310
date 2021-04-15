@@ -57,7 +57,19 @@ MSE(y_pred = zmb_adm2$lr_pop_sum, y_true = zmb_adm2$pop19)
 
 ## Random Forest Model
 
-We can check that we have the correct number of summed gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00756.
+First, we can look at the error of the random forest model:
+
+<img src="zambia_rf_error.png" alt="drawing" width="600"/>
+
+Error drops after a small number of trees, then remains relatively the same as the number of trees used in the model increases.
+
+We can also look at the variable importance in this model:
+
+<img src="zambia_rf_varimportance.png" alt="drawing" width="600"/>
+
+From the above plot, it looks like the variable "ntl," or night time light, is the most important variable in predicting population. This is a similar result as what was found in the initial look at the data ([March 24/26 Response](https://natallzl.github.io/data310/March24Response.html)).
+
+After running the model, we can check that we have the correct number of summed gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00756.
 
 **Below is a plot of the predicted population:**
 
@@ -71,7 +83,7 @@ We can check that we have the correct number of summed gridcell proportions (pre
 
 **Below is a plot of the difference (predicted - actual):**
 
-<img src="zambia_lr_diffpop.png" alt="drawing" width="800"/>
+<img src="zambia_rf_diffpop.png" alt="drawing" width="800"/>
 
 We can calculate the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,266,109.
 
@@ -100,7 +112,11 @@ MSE(y_pred = zmb_adm2$rf_pop_sum, y_true = zmb_adm2$pop19)
 
 ### Which model was more accurate?
 
-We can compare some stats:
+Comparison of zoomed in differences (Lusaka area; Linear Regression model, Random Forest model):
+
+<img src="zambia_lr_lusaka.png" alt="drawing" width="400"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="400"/>
+
+Even zoomed in, the maps of the difference (predicted - actual) are very, very similar - so let's compare some stats:
 
 | Measure      | Linear Regression Result    |  Random Forest Result    | Actual (if applicable)    |
 | ----------- | ----------- | ----------- | ----------- |
@@ -108,11 +124,6 @@ We can compare some stats:
 | sum of all differences          | 15,259,622     | 15,266,109     |   |
 | predicted population total     |  17,965,962  | 17,965,958   | 17,964,587   |
 | mean square error                   |  405,319.6 | 405,822.1  |   | 
-
-
-Comparison of zoomed in differences (Lusaka area; Linear Regression model, Random Forest model):
-
-<img src="zambia_lr_lusaka.png" alt="drawing" width="400"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="400"/>
 
 
 
