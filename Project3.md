@@ -110,11 +110,11 @@ We can compare some stats:
 | mean square error                   |  405,319.6 | 405,822.1  |   | 
 
 
-Comparison of zoomed in differences (Lusaka area):
+Comparison of zoomed in differences (Lusaka area; Linear Regression model, Random Forest model):
 
 <img src="zambia_lr_lusaka.png" alt="drawing" width="400"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="400"/>
 
-Linear Regression model                    Random Forest model
+
 
 
 ### Account for spatial variation throughout Zambia; why did these variations occur?
