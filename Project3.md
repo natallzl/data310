@@ -2,9 +2,9 @@
 
 Map of Zambia:
 
-Provinces:
+Provinces: 10 (Central, Copperbelt, Eastern, Luapula, Lusaka, Muchinga, Northern, North-Western, Southern, Western) 
 
-Districts: 117 (72 as of 2011, and 72 in this dataset) 
+Districts: 117 as of 2018 (*NOTE:* 72 districts in 2011 and 72 in this dataset; more districts created since 2011) 
 
 Total population (2019): 17,964,587
 
