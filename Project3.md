@@ -1,20 +1,28 @@
 ## Zambia Introduction
 
-Map of Zambia:
+**Map of Zambia:**
 
-Provinces: 10 (Central, Copperbelt, Eastern, Luapula, Lusaka, Muchinga, Northern, North-Western, Southern, Western) 
+<img src="zambia_map.jpg" alt="drawing" width="500"/>
 
-Districts: 117 as of 2018 (*NOTE:* 72 districts in 2011 and 72 in this dataset; more districts created since 2011) 
+**Capital:** Lusaka
 
-Total population (2019): 17,964,587
+**Provinces:** 10 (Central, Copperbelt, Eastern, Luapula, Lusaka, Muchinga, Northern, North-Western, Southern, Western) 
+
+**Districts:** 117 as of 2018 (*NOTE:* 72 districts in 2011 and 72 in this dataset; more districts created since 2011) 
+
+**Total population (2019):** 17,964,587
 
 ## Linear Regression Model
 
-We can check that we have the correct number of gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00757.
+We can check that we have the correct number of gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get **72.00757**.
 
-Below is a plot of the predicted population:
+Below is a plot of the **predicted population**:
 
-Below is a plot of the actual population:
+<img src="zambia_lr_predpop.png" alt="drawing" width="800"/>
+
+Below is a plot of the **actual population**:
+
+<img src="zambia_lr_realpop.png" alt="drawing" width="800"/>
 
 ### Validation of the linear regression model 
 
@@ -81,3 +89,7 @@ MSE(y_pred = zmb_adm2$rf_pop_sum, y_true = zmb_adm2$pop19)
 ### Which model was more accurate?
 
 ### Account for spatial variation throughout Zambia; why did these variations occur?
+
+**Map Source:** [Britannica](https://www.britannica.com/place/Zambia)
+
+**Code:** []()
