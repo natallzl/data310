@@ -145,11 +145,11 @@ Even zoomed in, the maps of the difference (predicted - actual) are very, very s
 
 Based on the model outputs and model validation and analysis, the linear regression model was more accurate. The lower the MSE, the higher the accuracy of the prediction made by the model. The linear regression model had a slightly smaller MSE (405,319.6) than the random forest model (405,822.1), which suggests the linear regression model was more accurate. 
 
-Additionally, the sum of all differences (sum of all differences of the absolute value of predicted population - actual population for each cell) is slightly smaller for the linear regression model (15,259,622) than the random forest model (15,266,109). This again suggests that the linear regression model was more accurate because overall, the predicted values are closer to the actual values. 
+Additionally, the sum of all differences (sum of all differences of the absolute value of predicted population - actual population for each cell) is slightly smaller for the linear regression model (15,259,622) than the random forest model (15,266,109). This again suggests that the linear regression model was more accurate because overall, the predicted values are closer to the actual values for that model. 
 
 Looking at predicted population total, the result of the random forest model (17,965,958) is closer to the actual population total (17,964,587) than the result of the linear regression result (17,965,962); however, the difference between the two predicted values is only 4 people. These results make sense, as both models tended to overpredict population counts. 
 
-After considering all of the results, I still conclude that the linear regression model was more accurate, though model performance was very, very similar.
+After considering all of the results, the linear regression model was more accurate, though model performance was very, very similar.
 
 ### Account for spatial variation throughout Zambia; why did these variations occur?
 
@@ -167,7 +167,7 @@ Generally, both models tended to over-predict population. One of the most intere
 
 I think the reason for this difference in under/over-prediction can be attributed to population density which may not be captured by factors used in our model prediction like night time light and other factors. Typically, in cities, more people live closer together in less space. The dark purple areas on the above plots are where the population was most under-predicted, so I might make an educated guess that the population is the most dense in those areas. 
 
-It should also be noted that as you look outside of the most densly populous center (purple), the plot has some areas of yellow, which are areas that population is actually MORE over-predicted than the surrounding orange areas. One explanation I can think of for this, which was touched on in class on Wednesday (April 14), is that there are still a lot of buildings (and thus a lot of night time light) in these areas, but instead these areas have office buildings or factories. Basically, these areas are where there are a lot buildings (similar to densely populated area) but instead of living there, people perhaps work, eat and visit those areas. A future step could be taken to add a layer for building footprint, to see how that affects performance of the models.
+It should also be noted that as you look outside of the most densly populous center (purple), the plot has some areas of yellow, which are areas that population is actually MORE over-predicted than the surrounding orange areas. One explanation I can think of for this, which was touched on in class on Wednesday (April 14), is that there are still a lot of buildings (and thus a lot of night time light) in these areas, but instead these areas might have office buildings or factories. Perhaps these areas are where there are a lot buildings (similar to densely populated area) but instead of living there, people perhaps work in, eat in, and visit those areas. A future step could be taken to add a layer for building footprint, to see how that affects performance of the models.
 
 **Map Source:** [Britannica](https://www.britannica.com/place/Zambia)
 
