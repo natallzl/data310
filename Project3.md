@@ -1,4 +1,14 @@
-## Zambia Introduction
+# Project 3, Zambia
+
+## Intro
+
+Population and geospatial data for Zambia were downloaded. Geospatial data included variables such as night time light, topography, bodies of water, cropland, tree cover, urban areas, and more. 
+
+Two models, a linear regression model and a random forest model, were run to predict population distribution in Zambia. The predicted values were compared to known population data through mapping and mean-square error calculation. 
+
+*Goals of this project:* Use two machine learning methods predict population values at 100 x 100 meter resolution throughout your selected country. Validate the two models using different methods presented in this class. Write a report assessing the two approaches and which of the two models was more accurate. Be sure to account for spatial variation throughout your selected location and provide substantive explanations for why those variations occurred.
+
+## Zambia
 
 **Map of Zambia:**
 
@@ -13,6 +23,8 @@
 **Total population (2019):** 17,964,587
 
 ## Linear Regression Model
+
+First, a linear regression model was run to predict population distribution of Zambia. The data were split into a training and a test set, and a linear regression model was then run. Different population measures were calculated and plotted - seen below. 
 
 We can check that we have the correct number of summed gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00757.
 
@@ -58,6 +70,8 @@ MSE(y_pred = zmb_adm2$lr_pop_sum, y_true = zmb_adm2$pop19)
 ```
 
 ## Random Forest Model
+
+A random forest model was also used to predict population in Zambia. 
 
 First, we can look at the error of the random forest model:
 
