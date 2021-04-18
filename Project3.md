@@ -56,7 +56,7 @@ Then, we can take a closer look at an area of interest. I decided to look closer
 
 <img src="zambia_lr_lusaka.png" alt="drawing" width="700"/>
 
-Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values. As seen below, error tends to be higher in the more highly populated areas of Zambia. 
+Finally, I calculated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values. As seen below, error tends to be higher in the more highly populated areas of Zambia. 
 
 Mean Square Error: 404,314.9
 
@@ -129,7 +129,9 @@ The **predicted population total** equaled 17,965,958, versus the **actual popul
 
 <img src="zambia_rf_lusaka.png" alt="drawing" width="700"/>
 
-Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values. As seen below, error again tends to be higher in the more highly populated areas of Zambia. 
+Similar to the linear regression model, the random forest model tended to over-predict population, except in areas of higher population like the city of Lusaka, where the model under-predicted population distribution. 
+
+Finally, I calculated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values. As seen below, error again tends to be higher in the more highly populated areas of Zambia. 
 
 Mean Square Error: 405,818.6
 
