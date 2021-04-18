@@ -42,6 +42,8 @@ One way we can measure how the model performed is to look at the difference in p
 
 <img src="zambia_lr_diffpop.png" alt="drawing" width="800"/>
 
+<img src="zambia_lr_diffpop3D.png" alt="drawing" width="800"/>
+
 It appears that the linear regression model over-predicted at most locations, and under-predicted around the capital city, Lusaka, as well as other more populated/densely populated areas like the central Northern area of Zambia.
 
 We can calculate the absolute value of the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,170,112.
@@ -58,9 +60,15 @@ Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square E
 
 Mean Square Error: 404,314.9
 
+<img src="zambia_lr_me3D.png" alt="drawing" width="800"/>
+
 Mean Absolute Error:
 
+<img src="zambia_lr_mae3D.png" alt="drawing" width="800"/>
+
 Root Mean Squared Error: 
+
+<img src="zambia_lr_rmse3D.png" alt="drawing" width="800"/>
 
 
 Mean Square Error was calculated utilizing the ```MLmetrics``` library.
@@ -109,6 +117,8 @@ After running the model, we can check that we have the correct number of summed 
 
 <img src="zambia_rf_diffpop.png" alt="drawing" width="800"/>
 
+<img src="zambia_rf_diffpop3D.png" alt="drawing" width="800"/>
+
 It appears that the random forest model performed comparably to the linear regression model. It over-predicted at most locations, and under-predicted around the capital city, Lusaka, as well as other more populated/densely populated areas like the central Northern area of Zambia.
 
 We can again calculate the absolute value **sum of all differences**, and we get 15,266,109.
@@ -123,9 +133,15 @@ Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square E
 
 Mean Square Error: 405,818.6
 
-Mean Absolute Error: 
+<img src="zambia_rf_me3D.png" alt="drawing" width="800"/>
 
-Root Mean Squared Error:
+Mean Absolute Error:
+
+<img src="zambia_rf_mae3D.png" alt="drawing" width="800"/>
+
+Root Mean Squared Error: 
+
+<img src="zambia_rf_rmse3D.png" alt="drawing" width="800"/>
 
 
 ## Analysis and Conclusions
