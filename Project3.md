@@ -123,7 +123,7 @@ It appears that the random forest model performed comparably to the linear regre
 
 We can again calculate the absolute value **sum of all differences**, and we get 15,266,109.
 
-The **predicted population total** equaled 17,965,958, versus the **actual population total**, which equals 17,964,587.
+The **predicted population total** equaled 17,965,958, versus the **actual population total**, which equals 17,964,587. So, the random forest model over-predicted the population of Zambia.
 
 **Below is a plot of the Lusaka province and neighboring Chibombo district:**
 
