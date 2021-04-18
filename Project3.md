@@ -56,19 +56,19 @@ Then, we can take a closer look at an area of interest. I decided to look closer
 
 <img src="zambia_lr_lusaka.png" alt="drawing" width="700"/>
 
-Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values.
+Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values. As seen below, error tends to be higher in the more highly populated areas of Zambia. 
 
 Mean Square Error: 404,314.9
 
-<img src="zambia_lr_me3D.png" alt="drawing" width="600"/>
+<img src="zambia_lr_me3D.png" alt="drawing" width="500"/>
 
 Mean Absolute Error:
 
-<img src="zambia_lr_mae3D.png" alt="drawing" width="600"/>
+<img src="zambia_lr_mae3D.png" alt="drawing" width="500"/>
 
 Root Mean Squared Error: 
 
-<img src="zambia_lr_rmse3D.png" alt="drawing" width="600"/>
+<img src="zambia_lr_rmse3D.png" alt="drawing" width="500"/>
 
 
 Mean Square Error was calculated utilizing the ```MLmetrics``` library.
@@ -129,19 +129,19 @@ The **predicted population total** equaled 17,965,958, versus the **actual popul
 
 <img src="zambia_rf_lusaka.png" alt="drawing" width="700"/>
 
-Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values.
+Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values. As seen below, error tends to be higher in the more highly populated areas of Zambia. 
 
 Mean Square Error: 405,818.6
 
-<img src="zambia_rf_me3D.png" alt="drawing" width="600"/>
+<img src="zambia_rf_me3D.png" alt="drawing" width="500"/>
 
 Mean Absolute Error:
 
-<img src="zambia_rf_mae3D.png" alt="drawing" width="600"/>
+<img src="zambia_rf_mae3D.png" alt="drawing" width="500"/>
 
 Root Mean Squared Error: 
 
-<img src="zambia_rf_rmse3D.png" alt="drawing" width="600"/>
+<img src="zambia_rf_rmse3D.png" alt="drawing" width="500"/>
 
 
 ## Analysis and Conclusions
@@ -161,15 +161,19 @@ Even zoomed in, the maps of the difference (predicted - actual) are very, very s
 | population total     |  17,966,217  | 17,965,958   | 17,964,587   |
 | mean square error                   |  404,314.9 | 405,818.6  |   | 
 
-Finally, we can compare the plots of mean error, mean absolute error, and root mean square error:
-
-
-
 Based on the model outputs and model validation and analysis, the linear regression model was more accurate. The lower the MSE, the higher the accuracy of the prediction made by the model. The linear regression model had a slightly smaller MSE (404,314.9) than the random forest model (405,818.6), which suggests the linear regression model was more accurate. 
 
 Additionally, the sum of all differences (sum of all differences of the absolute value of predicted population - actual population for each cell) is slightly smaller for the linear regression model (15,170,112) than the random forest model (15,266,109). This again suggests that the linear regression model was more accurate because overall, the predicted values are closer to the actual values for that model. 
 
 Looking at predicted population total, the result of the random forest model (17,965,958) is closer to the actual population total (17,966,217) than the result of the linear regression result (17,965,962); however, the difference is quite small. These results make sense, as both models tended to overpredict population counts. 
+
+Finally, we can compare the plots of mean error, mean absolute error, and root mean square error (Linear Regression model, Random Forest model):
+
+<img src="zambia_lr_me3D.png" alt="drawing" width="300"/> <img src="zambia_rf_me3D.png" alt="drawing" width="300"/>
+
+<img src="zambia_lr_mae3D.png" alt="drawing" width="300"/> <img src="zambia_rf_mae3D.png" alt="drawing" width="300"/>
+
+<img src="zambia_lr_rmse3D.png" alt="drawing" width="300"/> <img src="zambia_rf_rmse3D.png" alt="drawing" width="300"/>
 
 So, after considering all of the results, the linear regression model was more accurate, though model performance was very, very similar.
 
@@ -179,7 +183,7 @@ First, we can take another look at the plots of predicted values from both model
 
 <img src="zambia_lr_predpop.png" alt="drawing" width="450"/> <img src="zambia_rf_predpop.png" alt="drawing" width="450"/>
 
-Comparing these plots to the map of Zambia shown at the beginning of this project (and shown below), the area with the highest predicted populations appears to coincide with the location of Lusaka, the capital city of Zambia. Additionally, other areas with higher population (in light red) appear to coincide with other established locations, such as Livingstone in southern Zambia, Petauke and Chipata in the east, and a number of other towns/cities in central northern Zambia (the Copperbelt Province; where there is a lot of copper mining). 
+Comparing these plots to the map of Zambia shown at the beginning of this project (and shown below), the area with the highest predicted populations appears to coincide with the location of Lusaka, the capital city of Zambia. Additionally, other areas with higher population (in light red) appear to coincide with other established locations, such as Livingstone in southern Zambia, Petauke and Chipata in the east, and a number of other towns/cities in central northern Zambia (the Copperbelt Province; where there is a lot of copper mining). These are also the areas in which the highest measures of error are seen (see above; plots of mean error, mean absolute error and root mean square error). 
 
 <img src="zambia_map.jpg" alt="drawing" width="400"/>
 
