@@ -158,7 +158,6 @@ Even zoomed in, the maps of the difference (predicted - actual) are very, very s
 
 | Measure      | Linear Regression Result    |  Random Forest Result    | Actual (if applicable)    |
 | ----------- | ----------- | ----------- | ----------- |
-| summed gridcell proportions (number of districts)           |  72.00913   | 72.00756  | 72  |
 | sum of all differences          | 15,170,112     | 15,266,109     |   |
 | population total     |  17,966,217  | 17,965,958   | 17,964,587   |
 | mean square error                   |  404,314.9 | 405,818.6  |   | 
