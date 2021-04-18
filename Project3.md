@@ -152,7 +152,7 @@ Root Mean Squared Error:
 
 Comparison of zoomed in differences (Lusaka area; Linear Regression model, Random Forest model):
 
-<img src="zambia_lr_lusaka.png" alt="drawing" width="450"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="450"/>
+<img src="zambia_lr_lusaka.png" alt="drawing" width="350"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="350"/>
 
 Even zoomed in, the maps of the difference (predicted - actual) are very, very similar - so let's compare some stats:
 
