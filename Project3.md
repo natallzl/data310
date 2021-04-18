@@ -26,7 +26,7 @@ Two models, a linear regression model and a random forest model, were run to pre
 
 First, a linear regression model was run to predict population distribution of Zambia. The data were split into a training and a test set, and a linear regression model was then run. Different population measures were calculated and plotted - seen below. 
 
-We can check that we have the correct number of summed gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00757.
+We can check that we have the correct number of summed gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00913.
 
 **Below is a plot of the predicted population:**
 
@@ -46,7 +46,7 @@ It appears that the linear regression model over-predicted at most locations, an
 
 We can calculate the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,259,622.
 
-Then, we can also **compare the predicted population total to the actual population total**. The predicted total, ```cellStats(population_sums, sum)```, equaled 17,965,962. And the actual population total, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
+Then, we can also **compare the predicted population total to the actual population total**. The predicted total, ```cellStats(population_sums, sum)```, equaled 17,966,217. And the actual population total, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
 
 Then, we can take a closer look at an area of interest. I decided to look closer at the Lusaka area. Lusaka is the capital of Zambia, and as can be seen in the plots above, it appears to be the most populated area. Additionally, it appears that the population there was under-predicted (versus the majority of the country where the population was over-predicted). To zoom in on this area, I filtered the data by the Lusaka province and the neighboring Chibombo district of the Central province.  
 
