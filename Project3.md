@@ -44,7 +44,7 @@ One way we can measure how the model performed is to look at the difference in p
 
 It appears that the linear regression model over-predicted at most locations, and under-predicted around the capital city, Lusaka, as well as other more populated/densely populated areas like the central Northern area of Zambia.
 
-We can calculate the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,259,622.
+We can calculate the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,170,112.
 
 Then, we can also **compare the predicted population total to the actual population total**. The predicted total, ```cellStats(population_sums, sum)```, equaled 17,966,217. And the actual population total, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
 
@@ -54,12 +54,21 @@ Then, we can take a closer look at an area of interest. I decided to look closer
 
 <img src="zambia_lr_lusaka.png" alt="drawing" width="700"/>
 
-Finally, I calculated the **Mean Square Error (MSE)** for the predicted vs actual values. The MSE for the linear regression model was 405,319.6. 
+Finally, I calculated the **Mean Square Error, Mean Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual values.
 
-MSE was calculated by adding a column to the zmb_adm2 dataframe with the predicted populations for each of the 72 districts. 
+Mean Square Error: 404,314.9
+
+Mean Error: 352,621.3
+
+Mean Absolute Error: 15,170,112
+
+Root Mean Squared Error: 15,170,112
+
+
+Mean Square Error was calculated utilizing the ```MLmetrics``` library.
+
 ```
-population_sums <- gridcell_proportions_sums * population_adm2
-
+# add to dataframe so that we can calculate mse
 lr_pop_sums <- exact_extract(population_sums, zmb_adm2, fun=c('sum'))
 zmb_adm2 <- zmb_adm2 %>%
   add_column(lr_pop_sum = lr_pop_sums)
@@ -68,6 +77,7 @@ zmb_adm2 <- zmb_adm2 %>%
 # https://www.rdocumentation.org/packages/MLmetrics/versions/1.1.1/topics/MSE
 MSE(y_pred = zmb_adm2$lr_pop_sum, y_true = zmb_adm2$pop19)
 ```
+
 
 ## Random Forest Model
 
@@ -111,20 +121,14 @@ The **predicted population total**, ```cellStats(population_sums, sum)```, equal
 
 <img src="zambia_rf_lusaka.png" alt="drawing" width="700"/>
 
-Finally, the **MSE** for the random forest model was 405,822.1. 
+Finally, I calculated the **Mean Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual values.
 
-MSE was calculated by adding a column to the zmb_adm2 dataframe with the predicted populations for each of the 72 districts. 
-```
-population_sums <- gridcell_proportions_sums * population_adm2
+Mean Error:
 
-rf_pop_sums <- exact_extract(population_sums, zmb_adm2, fun=c('sum'))
-zmb_adm2 <- zmb_adm2 %>%
-  add_column(rf_pop_sum = rf_pop_sums)
+Mean Absolute Error:
 
-# MSE function in MLmetrics package
-# https://www.rdocumentation.org/packages/MLmetrics/versions/1.1.1/topics/MSE
-MSE(y_pred = zmb_adm2$rf_pop_sum, y_true = zmb_adm2$pop19)
-```
+Root Mean Squared Error:
+
 
 ## Analysis and Conclusions
 
