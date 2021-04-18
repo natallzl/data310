@@ -152,7 +152,7 @@ Root Mean Squared Error:
 
 Comparison of zoomed in differences (Lusaka area; Linear Regression model, Random Forest model):
 
-<img src="zambia_lr_lusaka.png" alt="drawing" width="350"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="350"/>
+<img src="zambia_lr_lusaka.png" alt="drawing" width="300"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="300"/>
 
 Even zoomed in, the maps of the difference (predicted - actual) are very, very similar - so let's compare some stats:
 
@@ -182,7 +182,7 @@ The plots look practically the same, which again indicates that the model accura
 
 First, we can take another look at the plots of predicted values from both models. 
 
-<img src="zambia_lr_predpop.png" alt="drawing" width="400"/> <img src="zambia_rf_predpop.png" alt="drawing" width="400"/>
+<img src="zambia_lr_predpop.png" alt="drawing" width="300"/> <img src="zambia_rf_predpop.png" alt="drawing" width="300"/>
 
 Comparing these plots to the map of Zambia shown at the beginning of this project (and shown below), the area with the highest predicted populations appears to coincide with the location of Lusaka, the capital city of Zambia. Additionally, other areas with higher population (in light red) appear to coincide with other established locations, such as Livingstone in southern Zambia, Petauke and Chipata in the east, and a number of other towns/cities in central northern Zambia (the Copperbelt Province; where there is a lot of copper mining). It should be noted that these are also the areas in which the highest measures of error are seen (see above; plots of mean error, mean absolute error and root mean square error). 
 
@@ -190,7 +190,7 @@ Comparing these plots to the map of Zambia shown at the beginning of this projec
 
 Generally, both models tended to over-predict population. One of the most interesting spatial variations to note is where population is over-predicted versus where it is under-predicted. Population is over-predicted almost everywhere, except in what appears to be the most populated areas, like Lusaka. 
 
-<img src="zambia_lr_lusaka.png" alt="drawing" width="400"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="350"/>
+<img src="zambia_lr_lusaka.png" alt="drawing" width="300"/> <img src="zambia_rf_lusaka.png" alt="drawing" width="300"/>
 
 I think the reason for this difference in under/over-prediction can be attributed to population density which may not be captured by factors used in our model prediction like night time light and other factors. Typically, in cities, more people live closer together in less space. The dark purple areas on the above plots are where the population was most under-predicted, so I might make an educated guess that the population is the most dense in those areas. 
 
