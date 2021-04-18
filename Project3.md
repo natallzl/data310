@@ -4,7 +4,7 @@
 
 Population and geospatial data for Zambia were downloaded. Geospatial data included variables such as night time light, topography, bodies of water, cropland, tree cover, urban areas, and more. 
 
-Two models, a linear regression model and a random forest model, were run to predict population distribution in Zambia. The predicted values were compared to known population data through mapping and mean-square error calculation. 
+Two models, a linear regression model and a random forest model, were run to predict population distribution in Zambia. The predicted values were compared to known population data through mapping, mean square error calculation, and plotting of statistics (mean square error, absolute square error, and root mean square error. 
 
 *Goals of this project:* Use two machine learning methods predict population values at 100 x 100 meter resolution throughout your selected country. Validate the two models using different methods presented in this class. Write a report assessing the two approaches and which of the two models was more accurate. Be sure to account for spatial variation throughout your selected location and provide substantive explanations for why those variations occurred.
 
@@ -28,11 +28,11 @@ First, a linear regression model was run to predict population distribution of Z
 
 We can check that we have the correct number of summed gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00913.
 
-**Below is a plot of the predicted population:**
+**Below is a plot of the predicted population distribution:**
 
 <img src="zambia_lr_predpop.png" alt="drawing" width="800"/>
 
-**Below is a plot of the actual population:**
+**Below is a plot of the actual population distribution:**
 
 <img src="zambia_lr_realpop.png" alt="drawing" width="800"/>
 
@@ -44,9 +44,9 @@ One way we can measure how the model performed is to look at the difference in p
 
 It appears that the linear regression model over-predicted at most locations, and under-predicted around the capital city, Lusaka, as well as other more populated/densely populated areas like the central Northern area of Zambia.
 
-We can calculate the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,170,112.
+We can calculate the absolute value of the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,170,112.
 
-Then, we can also **compare the predicted population total to the actual population total**. The predicted total, ```cellStats(population_sums, sum)```, equaled 17,966,217. And the actual population total, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
+Then, we can also **compare the predicted population total to the actual population total**. The predicted total, calculated using ```cellStats(population_sums, sum)```, equaled 17,966,217. And the actual population total, calculated using ```sum(zmb_adm2$pop19)```, equals 17,964,587.
 
 Then, we can take a closer look at an area of interest. I decided to look closer at the Lusaka area. Lusaka is the capital of Zambia, and as can be seen in the plots above, it appears to be the most populated area. Additionally, it appears that the population there was under-predicted (versus the majority of the country where the population was over-predicted). To zoom in on this area, I filtered the data by the Lusaka province and the neighboring Chibombo district of the Central province.  
 
@@ -54,15 +54,13 @@ Then, we can take a closer look at an area of interest. I decided to look closer
 
 <img src="zambia_lr_lusaka.png" alt="drawing" width="700"/>
 
-Finally, I calculated the **Mean Square Error, Mean Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual values.
+Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values.
 
 Mean Square Error: 404,314.9
 
-Mean Error: 352,621.3
+Mean Absolute Error:
 
-Mean Absolute Error: 15,170,112
-
-Root Mean Squared Error: 15,170,112
+Root Mean Squared Error: 
 
 
 Mean Square Error was calculated utilizing the ```MLmetrics``` library.
@@ -93,15 +91,15 @@ We can also look at the variable importance in this model:
 
 <img src="zambia_rf_varimportance.png" alt="drawing" width="600"/>
 
-From the above plot, it looks like the variable "ntl," or night time light, is the most important variable in predicting population. This is a similar result as what was found in the initial look at the data ([March 24/26 Response](https://natallzl.github.io/data310/March24Response.html)).
+From the above plot, it looks like the variable "ntl," or night time light, is the most important variable in predicting population. This is a similar result to what was found in the initial look at the data ([March 24/26 Response](https://natallzl.github.io/data310/March24Response.html)).
 
 After running the model, we can check that we have the correct number of summed gridcell proportions (predicted values / predicted totals) using ``` cellStats(gridcell_proportions_sums, sum) ```, which should equal the number of districts, or 72. And we get 72.00756.
 
-**Below is a plot of the predicted population:**
+**Below is a plot of the predicted population distribution:**
 
 <img src="zambia_rf_predpop.png" alt="drawing" width="800"/>
 
-**Below is a plot of the actual population:**
+**Below is a plot of the actual population distribution:**
 
 <img src="zambia_rf_realpop.png" alt="drawing" width="800"/>
 
@@ -113,19 +111,19 @@ After running the model, we can check that we have the correct number of summed 
 
 It appears that the random forest model performed comparably to the linear regression model. It over-predicted at most locations, and under-predicted around the capital city, Lusaka, as well as other more populated/densely populated areas like the central Northern area of Zambia.
 
-We can calculate the **sum of all differences** using ```cellStats(abs(diff_sums), sum)```, and we get 15,266,109.
+We can again calculate the absolute value **sum of all differences**, and we get 15,266,109.
 
-The **predicted population total**, ```cellStats(population_sums, sum)```, equaled 17,965,958. And the **actual population total**, ```sum(zmb_adm2$pop19)```, equals 17,964,587.
+The **predicted population total** equaled 17,965,958, versus the **actual population total**, which equals 17,964,587.
 
 **Below is a plot of the Lusaka province and neighboring Chibombo district:**
 
 <img src="zambia_rf_lusaka.png" alt="drawing" width="700"/>
 
-Finally, I calculated the **Mean Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual values.
+Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values.
 
-Mean Error:
+Mean Square Error: 405,818.6
 
-Mean Absolute Error:
+Mean Absolute Error: 
 
 Root Mean Squared Error:
 
@@ -142,18 +140,22 @@ Even zoomed in, the maps of the difference (predicted - actual) are very, very s
 
 | Measure      | Linear Regression Result    |  Random Forest Result    | Actual (if applicable)    |
 | ----------- | ----------- | ----------- | ----------- |
-| summed gridcell proportions (number of districts)           |  72.00757   | 72.00756  | 72  |
-| sum of all differences          | 15,259,622     | 15,266,109     |   |
-| population total     |  17,965,962  | 17,965,958   | 17,964,587   |
-| mean square error                   |  405,319.6 | 405,822.1  |   | 
+| summed gridcell proportions (number of districts)           |  72.00913   | 72.00756  | 72  |
+| sum of all differences          | 15,170,112     | 15,266,109     |   |
+| population total     |  17,966,217  | 17,965,958   | 17,964,587   |
+| mean square error                   |  404,314.9 | 405,818.6  |   | 
 
-Based on the model outputs and model validation and analysis, the linear regression model was more accurate. The lower the MSE, the higher the accuracy of the prediction made by the model. The linear regression model had a slightly smaller MSE (405,319.6) than the random forest model (405,822.1), which suggests the linear regression model was more accurate. 
+Finally, we can compare the plots of mean error, mean absolute error, and root mean square error:
 
-Additionally, the sum of all differences (sum of all differences of the absolute value of predicted population - actual population for each cell) is slightly smaller for the linear regression model (15,259,622) than the random forest model (15,266,109). This again suggests that the linear regression model was more accurate because overall, the predicted values are closer to the actual values for that model. 
 
-Looking at predicted population total, the result of the random forest model (17,965,958) is closer to the actual population total (17,964,587) than the result of the linear regression result (17,965,962); however, the difference between the two predicted values is only 4 people. These results make sense, as both models tended to overpredict population counts. 
 
-After considering all of the results, the linear regression model was more accurate, though model performance was very, very similar.
+Based on the model outputs and model validation and analysis, the linear regression model was more accurate. The lower the MSE, the higher the accuracy of the prediction made by the model. The linear regression model had a slightly smaller MSE (404,314.9) than the random forest model (405,818.6), which suggests the linear regression model was more accurate. 
+
+Additionally, the sum of all differences (sum of all differences of the absolute value of predicted population - actual population for each cell) is slightly smaller for the linear regression model (15,170,112) than the random forest model (15,266,109). This again suggests that the linear regression model was more accurate because overall, the predicted values are closer to the actual values for that model. 
+
+Looking at predicted population total, the result of the random forest model (17,965,958) is closer to the actual population total (17,966,217) than the result of the linear regression result (17,965,962); however, the difference is quite small. These results make sense, as both models tended to overpredict population counts. 
+
+So, after considering all of the results, the linear regression model was more accurate, though model performance was very, very similar.
 
 ### Account for spatial variation throughout Zambia; why did these variations occur?
 
