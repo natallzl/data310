@@ -97,7 +97,7 @@ Error drops after a small number of trees, then remains relatively the same as t
 
 We can also look at the variable importance in this model:
 
-<img src="zambia_rf_varimportance.png" alt="drawing" width="600"/>
+<img src="zambia_rf_varimportance.png" alt="drawing" width="650"/>
 
 From the above plot, it looks like the variable "ntl," or night time light, is the most important variable in predicting population. This is a similar result to what was found in the initial look at the data ([March 24/26 Response](https://natallzl.github.io/data310/March24Response.html)).
 
