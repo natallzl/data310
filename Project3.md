@@ -1,4 +1,4 @@
-# Project 3, Zambia
+# Project 3: Zambia Population Distribution
 
 ## Intro
 
