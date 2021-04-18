@@ -129,7 +129,7 @@ The **predicted population total** equaled 17,965,958, versus the **actual popul
 
 <img src="zambia_rf_lusaka.png" alt="drawing" width="700"/>
 
-Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values. As seen below, error tends to be higher in the more highly populated areas of Zambia. 
+Finally, I caluclated the **Mean Square Error**, and plotted the **Mean Square Error, Mean Absolute Error,** and **Root Mean Squared Error** for the predicted vs actual population values. As seen below, error again tends to be higher in the more highly populated areas of Zambia. 
 
 Mean Square Error: 405,818.6
 
