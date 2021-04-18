@@ -177,7 +177,7 @@ Finally, we can compare the plots of mean error, mean absolute error, and root m
 
 <img src="zambia_lr_rmse3D.png" alt="drawing" width="300"/> <img src="zambia_rf_rmse3D.png" alt="drawing" width="300"/>
 
-So, after considering all of the results, the linear regression model was more accurate, though model performance was very, very similar.
+The plots look practically the same, which again indicates that the model accuracy is similar between the linear regression and the random forest models. So, after considering all of the results, the linear regression model was more accurate, though model performance was very, very similar.
 
 ### Account for spatial variation throughout Zambia; why did these variations occur?
 
@@ -185,7 +185,7 @@ First, we can take another look at the plots of predicted values from both model
 
 <img src="zambia_lr_predpop.png" alt="drawing" width="450"/> <img src="zambia_rf_predpop.png" alt="drawing" width="450"/>
 
-Comparing these plots to the map of Zambia shown at the beginning of this project (and shown below), the area with the highest predicted populations appears to coincide with the location of Lusaka, the capital city of Zambia. Additionally, other areas with higher population (in light red) appear to coincide with other established locations, such as Livingstone in southern Zambia, Petauke and Chipata in the east, and a number of other towns/cities in central northern Zambia (the Copperbelt Province; where there is a lot of copper mining). These are also the areas in which the highest measures of error are seen (see above; plots of mean error, mean absolute error and root mean square error). 
+Comparing these plots to the map of Zambia shown at the beginning of this project (and shown below), the area with the highest predicted populations appears to coincide with the location of Lusaka, the capital city of Zambia. Additionally, other areas with higher population (in light red) appear to coincide with other established locations, such as Livingstone in southern Zambia, Petauke and Chipata in the east, and a number of other towns/cities in central northern Zambia (the Copperbelt Province; where there is a lot of copper mining). It should be noted that these are also the areas in which the highest measures of error are seen (see above; plots of mean error, mean absolute error and root mean square error). 
 
 <img src="zambia_map.jpg" alt="drawing" width="400"/>
 
