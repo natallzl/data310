@@ -21,6 +21,7 @@ Project ideas:
 A honey bee image dataset based on the publication [*Recognition of pollen-bearing bees from Video using Convolutional Neural Network*](https://doi.org/10.1109/WACV.2018.00041) by Ivan Rodriguez, Rémi Mégret, Edgar Acuña, José Agosto, and Tugrul Giray. The images are from videos recorded at the Bee facility of the Gurabo Agricultural Experimental Station of the University of Puerto Rico in 2017.
 
 - 714 image files of bees carrying/not carrying pollen
-- A corresponding .csv file with image file name and pollen carrying classification (0 or 1, discrete variable)
+- A corresponding .csv file 
   - 714 rows and 3 columns (index number, filename, pollen carrying classification)
+  - pollen carrying classification: 0 or 1, discrete variable
 - Data source: https://www.kaggle.com/ivanfel/honey-bee-pollen 
