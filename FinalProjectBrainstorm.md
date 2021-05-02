@@ -24,4 +24,4 @@ A honey bee image dataset based on the publication [*Recognition of pollen-beari
 - A corresponding .csv file 
   - 714 rows and 3 columns (index number, filename, pollen carrying classification)
   - pollen carrying classification: 0 or 1, discrete variable
-- Data source: https://www.kaggle.com/ivanfel/honey-bee-pollen 
+- Data source: ["Honey Bee pollen," Kaggle](https://www.kaggle.com/ivanfel/honey-bee-pollen)
