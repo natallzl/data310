@@ -11,6 +11,7 @@
 - [Feb. 26 Response](https://natallzl.github.io/data310/Feb26Response.html)
 - [March 12 Response](https://natallzl.github.io/data310/March12Response.html)
 - [March 24/26 Response](https://natallzl.github.io/data310/March24Response.html)
+- [Final Project brainstorming](https://natallzl.github.io/data310/FinalProjectBrainstorm.html)
 
 ### Projects
 1. [Mini-project (Feb. 14)](https://natallzl.github.io/data310/miniProject1.html)
