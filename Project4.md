@@ -29,9 +29,9 @@ I am using a honey bee image dataset from Kaggle that is based on data used in t
 
 **Example images from dataset:**
 
-| Pollen carrying: |  Non-pollen carrying: |
+| Pollen carrying |  Non-pollen carrying |
 | ----------- | ----------- |
-| <img src="Pbee.jpg" alt="drawing" width="100"/> |      <img src="NPbee.jpg" alt="drawing" width="100"/> |
+| <p align="center"><img src="Pbee.jpg" alt="drawing" width="100"/></p>  |      <p align="center"><img src="NPbee.jpg" alt="drawing" width="100"/></p> |
 
 Note the pollen baskets on the bee carrying pollen. 
 
