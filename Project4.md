@@ -10,6 +10,7 @@ Most crops that we grow for consumption require pollination, and pollination is 
 - [EPA](https://www.epa.gov/pollinator-protection/pollinator-health-concerns)
 - [Greenpeace](https://www.greenpeace.org/usa/sustainable-agriculture/save-the-bees/)
 - [*Recognition of Pollen-Bearing Bees from Video Using Convolutional Neural Network*](https://doi.org/10.1109/WACV.2018.00041)
+
 ----------
 
 ## Data Description
