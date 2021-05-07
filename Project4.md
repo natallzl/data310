@@ -11,12 +11,22 @@ Conclude your problem statement with a stated central research question. You are
 I am using a honey bee image dataset from Kaggle that is based on data used in the publication [*Recognition of pollen-bearing bees from Video using Convolutional Neural Network*](https://doi.org/10.1109/WACV.2018.00041) by Ivan Rodriguez, Rémi Mégret, Edgar Acuña, José Agosto, and Tugrul Giray. The images are stills from videos recorded at the Bee facility of the Gurabo Agricultural Experimental Station of the University of Puerto Rico in 2017.
 
 - 714 image files of bees carrying/not carrying pollen
+  - images with filenames beginning with "P" are images of bees carrying pollen
+  - images with filenames beginning with "NP" are images of bees *not* carrying pollen
 - A corresponding .csv file 
   - 714 rows and 3 columns
 - Variables:
   - index number
   - filename
   - pollen carrying classification: 0 or 1, discrete variable
+
+*Example images from dataset:*
+
+| Pollen carrying: |  Non-pollen carrying: |
+| ----------- | ----------- |
+| <img src="Pbee.jpg" alt="drawing" width="100"/> |      <img src="NPbee.jpg" alt="drawing" width="100"/> |
+
+Note the pollen baskets, or "saddlebags," on the bee carrying pollen. 
 
 Data source: ["Honey Bee pollen," Kaggle](https://www.kaggle.com/ivanfel/honey-bee-pollen)
 
