@@ -32,7 +32,7 @@ Data source: ["Honey Bee pollen," Kaggle](https://www.kaggle.com/ivanfel/honey-b
 
 I plan to use a CNN model, a convolution neural network. We used a CNN for image classification in class, so I think utlizing this kind of model is a good place to start. The paper that the dataset is based on, linked above, also takes a convolutional neural network approach, so it will be interesting to compare my model accuracy/success to that in the paper. In order to use this model, I will have to split the images into training and test images. I will also need to figure out how to classify the images, or how to add the labels pollen/no pollen to the images. 
 
-
+----------
 Research sources:
 - [MSU Department of Entomology](https://www.canr.msu.edu/nativeplants/pollination/)
 - [EPA](https://www.epa.gov/pollinator-protection/pollinator-health-concerns)
