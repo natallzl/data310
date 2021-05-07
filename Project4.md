@@ -4,6 +4,14 @@ Most crops that we grow for consumption require pollination, and pollination is 
 
 **Research question:** Can a machine learning model be created that can accurately classify whether a bee is carrying pollen or not?
 
+----------
+*Research sources:*
+- [MSU Department of Entomology](https://www.canr.msu.edu/nativeplants/pollination/)
+- [EPA](https://www.epa.gov/pollinator-protection/pollinator-health-concerns)
+- [Greenpeace](https://www.greenpeace.org/usa/sustainable-agriculture/save-the-bees/)
+- [*Recognition of Pollen-Bearing Bees from Video Using Convolutional Neural Network*](https://doi.org/10.1109/WACV.2018.00041)
+----------
+
 ## Data Description
 
 I am using a honey bee image dataset from Kaggle that is based on data used in the publication [*Recognition of pollen-bearing bees from Video using Convolutional Neural Network*](https://doi.org/10.1109/WACV.2018.00041) by Ivan Rodriguez, Rémi Mégret, Edgar Acuña, José Agosto, and Tugrul Giray. The images are stills from videos recorded at the Bee facility of the Gurabo Agricultural Experimental Station of the University of Puerto Rico in 2017.
@@ -18,7 +26,7 @@ I am using a honey bee image dataset from Kaggle that is based on data used in t
   - filename
   - pollen carrying classification: 0 or 1, discrete variable
 
-*Example images from dataset:*
+**Example images from dataset:**
 
 | Pollen carrying: |  Non-pollen carrying: |
 | ----------- | ----------- |
@@ -26,15 +34,8 @@ I am using a honey bee image dataset from Kaggle that is based on data used in t
 
 Note the pollen baskets on the bee carrying pollen. 
 
-Data source: ["Honey Bee pollen," Kaggle](https://www.kaggle.com/ivanfel/honey-bee-pollen)
+*Data source:* ["Honey Bee pollen," Kaggle](https://www.kaggle.com/ivanfel/honey-bee-pollen)
 
 ## Machine Learning Method
 
 I plan to use a CNN model, a convolution neural network. We used a CNN for image classification in class, so I think utlizing this kind of model is a good place to start. The paper that the dataset is based on, linked above, also takes a convolutional neural network approach, so it will be interesting to compare my model accuracy/success to that in the paper. In order to use this model, I will have to split the images into training and test images. I will also need to figure out how to classify the images, or how to add the labels pollen/no pollen to the images. 
-
-----------
-Research sources:
-- [MSU Department of Entomology](https://www.canr.msu.edu/nativeplants/pollination/)
-- [EPA](https://www.epa.gov/pollinator-protection/pollinator-health-concerns)
-- [Greenpeace](https://www.greenpeace.org/usa/sustainable-agriculture/save-the-bees/)
-- [*Recognition of Pollen-Bearing Bees from Video Using Convolutional Neural Network*](https://doi.org/10.1109/WACV.2018.00041)
