@@ -2,6 +2,7 @@
 
 Most crops that we grow for consumption require pollination, and pollination is essential for natural plant communities as well. Bees are essential pollinators, about 80% of pollination around the world is taken care of by honey bees. It has been said that for one out of every three bites of food, bees are responsible for that bite. With changes in land use, increased pesticide use, and climate change, as well as a number of other factors, bee communities have been declining. 
 
+
 The number of worker bees in a colony is essential to its functioning. Worker bees collect pollen on their legs; the hairs on their bodies attract grains of pollen, which are then formed into pockets or "baskets" on their legs for carrying back to the hive. To understand behavior of bees (hierarchy interactions, prospective activity, and more) as well as colony health, hive and honey bee activity can be observed. Typically, this observation is done manually by researchers. Machine learning has the potential to observe and classify activity automatically and more quickly than humans, which can allow for large scale data collection and can possibly lead to new insights into bee activity and colony health. 
 
 **Research question:** Can a machine learning model be created that can accurately classify whether a bee is carrying pollen or not?
