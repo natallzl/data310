@@ -7,13 +7,6 @@ Project ideas:
 - the effect of pesticides on honey bees & honey production
 - image identification of bees carrying pollen vs not carrying pollen
 
-**Problem statement:**
-
-- *introduces your selected topic,* 
-- *identifies significant goals associated with the implementation of your applied machine learning method,*
-- *demonstrates why your problem is important, and* 
-- *describes and analyzes the complex nature of your problem including any process oriented causes and effects.*
-
 **Research question:** Can a CNN be used to classify whether a bee is carrying pollen or not? 
 
 **Data description:**
