@@ -7,7 +7,7 @@ Project ideas:
 - the effect of pesticides on honey bees & honey production
 - image identification of bees carrying pollen vs not carrying pollen
 
-**Research question:** Can a CNN be used to classify whether a bee is carrying pollen or not? 
+**Research question:** Can a machine learning model be created that can accurately classify whether a bee is carrying pollen or not? 
 
 **Data description:**
 
