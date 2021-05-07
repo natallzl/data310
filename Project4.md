@@ -17,7 +17,6 @@ I am using a honey bee image dataset from Kaggle that is based on data used in t
   - index number
   - filename
   - pollen carrying classification: 0 or 1, discrete variable
-
 - Data source: ["Honey Bee pollen," Kaggle](https://www.kaggle.com/ivanfel/honey-bee-pollen)
 
 ## Machine Learning Method
