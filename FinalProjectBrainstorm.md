@@ -1,4 +1,4 @@
-## Final Project Idea
+## Final Project Idea Brainstorming
 
 **General topic:** Honey bees! 
 
@@ -18,3 +18,5 @@ A honey bee image dataset based on data used in the publication [*Recognition of
   - 714 rows and 3 columns (index number, filename, pollen carrying classification)
   - pollen carrying classification: 0 or 1, discrete variable
 - Data source: ["Honey Bee pollen," Kaggle](https://www.kaggle.com/ivanfel/honey-bee-pollen)
+
+Other potential dataset: [Honeybees and Neonic Pesticides](https://www.kaggle.com/kevinzmith/honey-with-neonic-pesticide)
