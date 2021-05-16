@@ -19,3 +19,8 @@
 3. [Project 2 (March 24)](https://natallzl.github.io/data310/Project2.html)
 4. [Project 3 (April 18)](https://natallzl.github.io/data310/Project3.html)
 5. [Project 4: Final Project Introduction (May 7)](https://natallzl.github.io/data310/Project4.html)
+
+### Final Project
+- Abstract
+- Presentation slides
+- Presentation video & script
