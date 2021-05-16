@@ -10,6 +10,7 @@ The number of worker bees in a colony is essential to its functioning. Worker be
 ----------
 *Research sources:*
 - [MSU Department of Entomology](https://www.canr.msu.edu/nativeplants/pollination/)
+- [U of A Division of Agriculture](https://www.uaex.edu/farm-ranch/special-programs/beekeeping/pollinators.aspx)
 - [EPA](https://www.epa.gov/pollinator-protection/pollinator-health-concerns)
 - [Greenpeace](https://www.greenpeace.org/usa/sustainable-agriculture/save-the-bees/)
 - [*Recognition of Pollen-Bearing Bees from Video Using Convolutional Neural Network*](https://doi.org/10.1109/WACV.2018.00041)
