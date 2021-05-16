@@ -21,6 +21,6 @@
 5. [Project 4: Final Project Introduction (May 7)](https://natallzl.github.io/data310/Project4.html)
 
 ### Final Project
-- Abstract
+- [Abstract] (https://natallzl.github.io/data310/FinalAbstract.html)
 - Presentation slides
 - Presentation video & script
