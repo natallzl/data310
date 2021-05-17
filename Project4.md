@@ -5,7 +5,9 @@ Most crops that we grow for consumption require pollination, and pollination is 
 
 The number of worker bees in a colony is essential to its functioning. Worker bees collect pollen on their legs; the hairs on their bodies attract grains of pollen, which are then formed into pockets or "baskets" on their legs for carrying back to the hive. To understand behavior of bees (hierarchy interactions, prospective activity, and more) as well as colony health, hive and honey bee activity can be observed. Typically, this observation is done manually by researchers. Machine learning has the potential to observe and classify activity automatically and more quickly than humans, which can allow for large scale data collection and can possibly lead to new insights into bee activity and colony health. 
 
-**Research question:** Can a machine learning model be created that can accurately classify whether a bee is carrying pollen or not?
+In *Recognition of Pollen-Bearing Bees from Video Using Convolutional Neural Network*, Rodriguez et al. aimed to recognize pollen-bearing bees from videos of a hive entrance, with a goal to automatically oversee honey bee activity such as foraging behavior and task specialization. After testing multiple approaches, their convolutional neural network approach outperformed the others.
+
+**Research question:** Can we create a convolutional neural network model that can accurately classify whether a bee is carrying pollen or not?
 
 ----------
 *Research sources:*
@@ -34,7 +36,7 @@ I am using a honey bee image dataset from Kaggle that is based on data used in t
 
 **Example images from dataset:**
 
-| Pollen carrying |  Non-pollen carrying |
+| Pollen carrying (1) |  Non-pollen carrying (0) |
 | ----------- | ----------- |
 | <img src="Pbee.jpg" alt="drawing" width="100"/>  |     <img src="NPbee.jpg" alt="drawing" width="100"/>|
 
@@ -45,3 +47,15 @@ Note the pollen baskets on the bee carrying pollen.
 ## Machine Learning Method
 
 I plan to use a CNN model, a convolution neural network. We used a CNN for image classification in class, so I think utlizing this kind of model is a good place to start. The paper that the dataset is based on, linked above, also takes a convolutional neural network approach, so it will be interesting to compare my model accuracy/success to that in the paper. In order to use this model, I will have to split the images into training and test images. I will also need to figure out how to classify the images, or how to add the labels pollen/no pollen to the images. 
+
+Model architecture:
+
+<img src="model.png" alt="drawing" width="400"/>
+
+I utilized convolutional neural network code we used in class, and modified it to fit my honey bee classification purposes. Because the images are in color, the model has three Conv2D and Pooling layers, with an intial input shape of (300, 180, 3). It also has a flatten layer and two dense layers. Because the classification is categorical, pollen carrying or not, I chose to use SparseCategoricalCrossentropy in compiling the model. Finally, after testing different numbers of epochs, I chose to run the model for a total of five epochs. Below is a visualization of intial model performance. 
+
+<img src="modelperformance.png" alt="drawing" width="400"/>
+
+Training accuracy = 0.8782
+
+Test accuracy = 0.8741
