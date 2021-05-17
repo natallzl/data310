@@ -12,7 +12,7 @@ Bees are essential pollinators, about 80% of pollination around the world is tak
 - EPA. (2018, July 19). *Pollinator Health Concerns.* EPA. https://www.epa.gov/pollinator-protection/pollinator-health-concerns. 
 - Michigan State University Department of Entolomogy. (n.d.). *Pollination.* Native Plants and Ecosystem Services. https://www.canr.msu.edu/nativeplants/pollination/. 
 - Schwartz, J., Kuenzle, M., &amp; Pinsky, D. (2014, June 18). *Save the Bees.* Greenpeace USA. https://www.greenpeace.org/usa/sustainable-agriculture/save-the-bees/. 
-- University of Arkansas Department of Agriculture. (n.d.). *The importance of pollinators.* Bees as Pollinators | Arkansas Pollinators. https://www.uaex.edu/farm-ranch/special-programs/beekeeping/pollinators.aspx. 
+- University of Arkansas Department of Agriculture. (n.d.). *The importance of pollinators.* Bees as Pollinators; Arkansas Pollinators. https://www.uaex.edu/farm-ranch/special-programs/beekeeping/pollinators.aspx. 
 
 **Data**
 - Rodriguez, I. F. (2018, November 20). *Honey Bee pollen.* Kaggle. https://www.kaggle.com/ivanfel/honey-bee-pollen. 
