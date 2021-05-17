@@ -56,4 +56,6 @@ I utilized convolutional neural network code we used in class, and modified it t
 
 <img src="modelperformance.png" alt="drawing" width="500"/>
 
-Training accuracy = 0.8782, Test accuracy = 0.8741
+Training accuracy = 87.82%, Test accuracy = 87.41%
+
+Compared to the results in the paper by Rodriguez et al., this model performed quite well. The researchers split the images 70/30 (I did 80/20). Their results show that the KNN, K nearest neighbors, with PCA (Principal Component Analysis) had an accuracy of 84.60%. Naive Bayes with PCA had an accuracy of 77.69%. SVM (support-vector machine) with PCA had an accuracy of 84.79%, and SVM rdf (Radial Basis Function) with PCA had an accuracy of 91.16%. Their shallow CNN had the best performance, with an accuracy of 96.4%. The researchers also ran their model for many more epochs than I did, 200 versus five. This suggests that while my model performs pretty well, there is still much room for improvement. 
