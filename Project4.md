@@ -50,12 +50,10 @@ I plan to use a CNN model, a convolution neural network. We used a CNN for image
 
 Model architecture:
 
-<img src="model.png" alt="drawing" width="600"/>
+<img src="model.png" alt="drawing" width="700"/>
 
 I utilized convolutional neural network code we used in class, and modified it to fit my honey bee classification purposes. Because the images are in color, the model has three Conv2D and Pooling layers, with an intial input shape of (300, 180, 3). It also has a flatten layer and two dense layers. Because the classification is categorical, pollen carrying or not, I chose to use SparseCategoricalCrossentropy in compiling the model. Finally, after testing different numbers of epochs, I chose to run the model for a total of five epochs. Below is a visualization of intial model performance. 
 
-<img src="modelperformance.png" alt="drawing" width="400"/>
+<img src="modelperformance.png" alt="drawing" width="500"/>
 
-Training accuracy = 0.8782
-
-Test accuracy = 0.8741
+Training accuracy = 0.8782, Test accuracy = 0.8741
