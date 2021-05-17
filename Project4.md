@@ -52,7 +52,7 @@ Model architecture:
 
 <img src="model.png" alt="drawing" width="700"/>
 
-I utilized convolutional neural network code we used in class, and modified it to fit my honey bee classification purposes. Because the images are in color, the model has three Conv2D and Pooling layers, with an initial input shape of (300, 180, 3). It also has a flatten layer and two dense layers. Because the classification is categorical, pollen carrying or not, I chose to use SparseCategoricalCrossentropy in compiling the model. Finally, after testing different numbers of epochs, I chose to run the model for a total of five epochs. Below is a visualization of model performance. 
+I utilized convolutional neural network code we used in class, and modified it to fit my honey bee classification purposes. The model has three Conv2D and Pooling layers, with an initial input shape of (300, 180, 3). It also has a flatten layer and two dense layers. Because the classification is categorical, pollen carrying or not, I chose to use SparseCategoricalCrossentropy in compiling the model. Finally, after testing different numbers of epochs, I chose to run the model for a total of five epochs. Below is a visualization of model performance. 
 
 <img src="modelperformance.png" alt="drawing" width="500"/>
 
