@@ -22,4 +22,4 @@
 
 ### Final Project
 - [Abstract](https://natallzl.github.io/data310/FinalAbstract.html)
-- [Presentation slides & video](https://natallzl.github.io/data310/FinalPresentation.html)
+- [Presentation slides & video]
