@@ -24,3 +24,8 @@ Bees are essential pollinators, about 80% of pollination around the world is tak
 **Presentation Photos**
 - Brown, K. (2020, July 12). *Photo by Kelsey Brown on Unsplash.* Beautiful Free Images &amp; Pictures. https://unsplash.com/photos/DUH-BOpXtAA. 
 - *Honey Bee PNG Images: Honey Bee Transparent PNG.* Vippng. (n.d.). https://www.vippng.com/ps/honey-bee/. 
+
+
+-----
+
+**Code:** [honeybeeCNN.py](https://github.com/natallzl/data310/blob/main/honeybeeCNN.py)
